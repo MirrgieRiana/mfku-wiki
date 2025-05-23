@@ -2,6 +2,14 @@
 * 天耳通（Divine Ear） [#bbead4b2]
 
 『重大な事故』に登場。
-通信以外によって誰かの生存を確認できる手段の模様。
+- 通信以外によって誰かの生存を確認できる手段の模様。
 
-その他、MirageFairy2019では[[天耳通の祠>https://w.atwiki.jp/miragefairy2019/pages/95.html]]というブロックがあった。
+----
+
+MirageFairy2019では[[天耳通の祠（Chat Webhook Transmitter）>https://w.atwiki.jp/miragefairy2019/pages/95.html]]というブロックがあった。
+- その効果は、Minecraft内のチャットをDiscordのWebhookに送信するというメタな機能。
+-- マイクラMODに登場するブロックの中でもかなり特殊な部類の装置であろう。
+- 材料がビーコンや★5妖精と高く、30日おきにGUIを開きなおさなければ止まってしまう。
+-- 時間制限が無い「アカーシャのお導きによる天耳通の祠」（Creative Chat Webhook Transmitter）というクリエイティブ専用のものもある。
+- 地形をロードしてなくても動作する。
+-- Discordへの送信機能自体はワールドに紐づいて管理されており、天耳通の祠自体はそのリモコンに過ぎない。

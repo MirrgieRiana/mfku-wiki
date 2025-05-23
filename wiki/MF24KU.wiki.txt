@@ -1,0 +1,35 @@
+
+2024年11月頃にMirageFairy2024から派生したMOD。
+
+2025年5月1日時点での著者は、「The Developer of MirageFairy, Generation 7」および「夜のかけら」。
+
+* 名称 [#sb91f563]
+
+このMODには以下のような表記ゆれがあります。
+
+|MF24KU|正式名称|
+|MirageFairy2024-Kakera-Unofficial|古い正式名称|
+|MirageFairy2024-KU|文字数制限のために正式名称が書けない場所に記載されていた古い名称|
+
+- 5月1日に正式名称がMirageFairy2024-Kakera-UnofficialからMF24KUに変更された。
+
+* 依存関係 [#b0e39d3d]
+
+- Minecraft 1.21.1
+- Fabric / NeoForge
+- TerraBlenader
+- Fabric Language Kotlin / Kotlin for Forge
+- Fabric API / Forgified Fabric API
+- Cloth Config API
+- oωo (owo-lib)
+- Architectury API
+
+* 外部リンク [#e7b03c11]
+
+** GitHub [#nddb34fb]
+
+https://github.com/MirrgieRiana/MirageFairy2024-Kakera-Unofficial
+
+** 配布 [#t0a79fe3]
+
+ダウンロードはこのWikiのメニューにあるリンクからできます

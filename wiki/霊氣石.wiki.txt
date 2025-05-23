@@ -24,7 +24,9 @@ v15kuで追加された素材ブロック。
 
 ** 余談 [#u9432723]
 
-[[MirageFairy2023には、アカーシャの霊氣石というクリエイティブ専用アイテムがあった。>https://wikiwiki.jp/mifai2023/%E3%82%A2%E3%82%AB%E3%83%BC%E3%82%B7%E3%83%A3%E3%81%AE%E9%9C%8A%E6%B0%A3%E7%9F%B3]]
+過去作には似たような名前のクリエイティブ専用アイテムがあった。
+- [[MirageFairy2019のアカーシャの霊気石>https://w.atwiki.jp/miragefairy2019/pages/260.html]]
+- [[MirageFairy2023のアカーシャの霊氣石>https://wikiwiki.jp/mifai2023/%E3%82%A2%E3%82%AB%E3%83%BC%E3%82%B7%E3%83%A3%E3%81%AE%E9%9C%8A%E6%B0%A3%E7%9F%B3]]
 - サバイバルでは入手できず、設置されたものはサバイバルでは破壊できない。
 
 ----

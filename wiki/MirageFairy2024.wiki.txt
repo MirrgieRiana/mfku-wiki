@@ -2,7 +2,7 @@
 2023年に開発がスタートしたMirageFairyの3番目の公開MOD。
 2025年2月1日時点での著者は、「MirageFairy開発者-G7」。
 
-MirageFairy2024-Kakera-Unofficialの派生元の作品。
+MF24KUの派生元の作品。
 
 * 依存関係 [#b0e39d3d]
 

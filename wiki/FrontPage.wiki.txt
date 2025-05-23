@@ -1,19 +1,19 @@
-TITLE:MirageFairy2024-Kakera-Unofficial非公式Wiki
+TITLE:MFKU非公式Wiki
 
-#ref(MirageFairy2024-Kakera-Unofficial_GitHub-Repository_2.png,center)
+#ref(MF24KU_GitHub-Repository_2.png,center)
 
 * ガイド [#s998cf8b]
 
 見たい項目をメニューから選択してください。
 
-* MirageFairy2024-Kakera-Unofficialへの移行について [#s94900b2]
+* 取り扱い対象のMFKUへの移行について [#s94900b2]
 
-MirageFairy2024-Kakera-Unofficial（KU）は、2024年11月頃にMirageFairy2024（本家） v14から派生したMODです。
+MF24KU（旧称MirageFairy2024-Kakera-Unofficial）は、2024年11月頃に、MirageFairy2024（本家）のv14から派生したMODです。
 v13以前は本家しかなく、v14は同等のものが両方に存在し、v15以降は2025年2月1日現在KU側にだけ存在します。
 
-当Wikiでは主要な編集者が主にKUの方で活動しているため、v15以降は本家ではなくKUの方を主に取り扱います。
+当Wikiでは主要な編集者が主にKUの方で活動しているため、MF24KU v15以降は本家ではなくMF24KUの方を主に取り扱います。
 
-ただし、当Wikiではv15以降の本家の内容も取り扱うこともできます。
+また、MF24KU派生以前の本家作品も含む、MFKUの世界観全般も扱います。
 
 * ライセンス表示 [#mc3789ff]
 
@@ -36,7 +36,7 @@ https://github.com/MirageFairy/MirageFairy2024
 
 ----
 
-『MirageFairy2024-Kakera-Unofficial』
+『MF24KU』
 by 夜のかけら
 https://github.com/MirrgieRiana/MirageFairy2024-Kakera-Unofficial
 
