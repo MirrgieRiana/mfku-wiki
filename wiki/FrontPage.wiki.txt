@@ -1,0 +1,90 @@
+TITLE:MirageFairy2024-Kakera-Unofficial非公式Wiki
+
+#ref(MirageFairy2024-Kakera-Unofficial_GitHub-Repository_2.png,center)
+
+* ガイド [#s998cf8b]
+
+見たい項目をメニューから選択してください。
+
+* MirageFairy2024-Kakera-Unofficialへの移行について [#s94900b2]
+
+MirageFairy2024-Kakera-Unofficial（KU）は、2024年11月頃にMirageFairy2024（本家） v14から派生したMODです。
+v13以前は本家しかなく、v14は同等のものが両方に存在し、v15以降は2025年2月1日現在KU側にだけ存在します。
+
+当Wikiでは主要な編集者が主にKUの方で活動しているため、v15以降は本家ではなくKUの方を主に取り扱います。
+
+ただし、当Wikiではv15以降の本家の内容も取り扱うこともできます。
+
+* ライセンス表示 [#mc3789ff]
+
+特にことわりがない限り、本Wikiの内容は『クリエイティブ・コモンズ 表示4.0国際ライセンス』に従います。
+
+** ライセンス変更について [#j5e5d56a]
+
+当Wikiのライセンスは、従来『クリエイティブ・コモンズ 表示-継承4.0国際ライセンス』としておりましたが、2025年2月1日以降、『クリエイティブ・コモンズ 表示4.0国際ライセンス』へと変更されました。
+
+** 派生元作品表示 [#q151a5ce]
+
+『MirageFairy』
+https://miragefairy.notion.site/
+
+----
+
+『MirageFairy2024』
+by MirageFairy開発者-G7
+https://github.com/MirageFairy/MirageFairy2024
+
+----
+
+『MirageFairy2024-Kakera-Unofficial』
+by 夜のかけら
+https://github.com/MirrgieRiana/MirageFairy2024-Kakera-Unofficial
+
+//TITLE:FrontPage（お好きなタイトルに変更して下さい）
+//凍結を解除してください。
+//(新規登録時に設定したパスワードを使用して下さい)　→　[[凍結解除:FrontPage]]
+//#br
+//
+//----
+//
+//&size(20){''Welcome to WIKIWIKI''};
+//あなたのサイトに合わせ、自由に編集してください :)
+//
+//----
+//- [[WIKIWIKI利用規約>https://wikiwiki.jp/pp/policies]]
+//- [[WIKIWIKIの特徴>https://wikiwikijp/pp/characteristic]]
+//- [[プラグインマニュアル>https://wikiwiki.jp/sample/?PukiWiki/1.4/Manual/Plugin]]
+//- [[よくある質問(FAQ)>https://wikiwiki.jp/pp/faq]]
+//- [[助け合い掲示板>https://zawazawa.jp/wikiwiki-help/]]
+//- [[サンプルサイト>https://wikiwiki.jp/sample/]] (投稿テスト可能/プラグイン動作例有)
+//
+//----
+//
+//- [[ヘルプ]] -- PukiWikiで編集するには？
+//- [[テキスト整形のルール>整形ルール]]
+//- [[SandBox]] -- 練習ページ
+//
+//----
+//RIGHT:このFrontPageの内容は https://wikiwiki.jp/sample/ からいつでも確認出来ます。
+//----
+//
+//#br
+//
+//* ''Tips''
+//
+//- MenuBarを編集する　→　[[編集:MenuBar]]
+//- ヘッドエリア・フットエリアを編集する　→　[[サンプルサイトへ>wikiwikijpsample:ヘッドエリア・フットエリアを編集する]]
+//- ページ名に「/」を入れることで階層分けができます。（例）hogehoge/page1、hogehoge/page2/no1
+//- 見出しの &attachref(FrontPage/paraedit.png,nolink,12x12,エンピツ); をクリックして部分編集ができます。
+//- 見出しの上で左クリックすると、ポップアップメニューが表示されます。（※レベル1見出し(*)のみ）
+//- 編集画面の編集フォーム下にあるチェックボックスにチェックし、管理パスワードを入れて「ページの更新」するとタイムスタンプを更新しません。
+//- 全てのページがバックアップされています。バックアップを確認したいページへ行き、上部にある「バックアップ」をクリックすると一覧が確認できます。削除されたページも復旧可能です。
+//（例）FrontPageのバックアップ:[[バックアップ:FrontPage]]
+//* ''編集時の注意点''
+//- サイトを更新すると[[WIKIWIKI>https://wikiwiki.jp/]]トップの「最近更新されたWIKI」に表示されます。
+//（閉鎖的なコミュニティの使用には向いておりません。）
+//*リアルタイムコメント
+//リアルタイムでコメントを表示します。
+//チャットのような機能です。
+//[[リアルタイムコメントフォーム>https://wikiwiki.jp/sample/?%A5%EA%A5%A2%A5%EB%A5%BF%A5%A4%A5%E0%A5%B3%A5%E1%A5%F3%A5%C8%A5%D5%A5%A9%A1%BC%A5%E0]]
+//#rtcomment(,30,true)

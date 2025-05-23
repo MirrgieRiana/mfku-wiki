@@ -1,0 +1,118 @@
+
+ここは、MirageFairyに関する公式および非公式の資料を網羅的にまとめることを目指すページです。
+公式の資料は公式サイトに概ね載っていますが、このページは誰でも編集ができる場所に、非公式の情報も含めて掲載できることが趣旨です。
+
+----
+
+#contents
+
+* 本ページの旧式化について [#k9659724]
+
+MF24系統のMOD界隈では、MirageFairy2024-Kakera-Unofficialの派生に伴って大量の情報が更新されました。
+''&color(red){しかしながら、本ページの内容はそれに追従出来ておりません！};''
+
+* MirageFairy2024-Kakera-Unofficial [#bff1cac0]
+
+** 『MirageFairy2024-Kakera-Unofficial』とは？ [#l78c9c6a]
+
+2024年11月に夜のかけら氏によってフォークされた、MirageFairy2024の派生MODです。
+
+** MirageFairy-Kakera-Unofficial公式サイト [#pbc71e76]
+
+> https://miragefairy-kakera-unofficial.notion.site
+
+MirageFairyプロジェクトのKU派生の公式サイトです。
+
+MirageFairy本家の公式サイトは2025年2月1日現在確認されていません。
+
+** MirageFairy2024-Kakera-Unofficial 配布ページ（Modrinth） [#bb731359]
+
+> https://modrinth.com/mod/miragefairy2024-kakera-unofficial
+
+MirageFairy2024-Kakera-UnofficialのModrinthページです。
+
+前提MODがありますが、Modrinthアプリからインストールすると前提MODも自動的にインストールしてくれます。
+
+** MirageFairy-Kakera-Unofficial Discord [#u77c4e34]
+
+> https://discord.gg/qSWsnZttB8
+
+MirageFairy-Kakera-UnofficialのDiscordです。
+
+一部の条件に該当するメンバーに対し、制限がかけられています。
+
+** MirageFairy2024-KU非公式Wiki [#kf1db6bd]
+
+> https://wikiwiki.jp/mifai2024/
+
+本Wikiです。
+非公式であり、誰でも編集できますが、ほとんどの部分はMOD作者によって書かれています。
+
+* MirageFairy2024 [#uec3ca7f]
+
+** 『MirageFairy2024』とは？ [#e15db267]
+
+公式GitHubには以下の英語の説明があります。
+
+> The Minecraft MOD for the MirageFairy project in 2024.
+> （訳：2024年のMirageFairyプロジェクトのMinecraft MOD）
+
+MirageFairyという創作プロジェクトがあり、MirageFairy2024はそのマイクラMODです。
+
+旧作にはMirageFairy2023、MirageFairy2019があります。
+MOD作品ごとに舞台が異なり、登場人物や設定等にも変化があります。
+
+MirageFairyの世界観はすべてのMODおよび、MODでない作品の間で共有されています。
+
+** 配布ページ（Modrinth） [#fc2f34df]
+
+> https://modrinth.com/mod/miragefairy2024
+
+最新のMirageFairy2024が入手できます。
+前提MODがありますが、Modrinthアプリからインストールすると前提MODも自動的にインストールしてくれます。
+
+** Discord『MirageFairy2024公式・交流』 [#ic661655]
+
+> %% https://discord.gg/9Gre3MHGvD %%
+
+%%誰でも入れます。%%
+%%挨拶や自己紹介などは特に決まっていません。%%
+
+''&color(red){当該リンクは2025年2月1日現在利用できません。};''
+
+** 『MirageFairy』公式Webサイト [#k8e6ab5e]
+
+> %% https://miragefairy.notion.site/ %%
+
+%%MirageFairyプロジェクトの公式サイトです。%%
+%%公式の資料のほとんどすべてはここからたどることができます。%%
+
+----
+
+%%旧作MODのほか、MirageFairyの世界観に関するテキストもあります。%%
+
+----
+
+''&color(red){当該サイトは2025年2月1日現在アクセスできません。};''
+
+** MirageFairy2024 Test Play Server [#mbdb2448]
+
+%%MirageFairy2024のマルチワールドのテストをするための公開テストプレイサーバーがあります。%%
+
+''&color(red){当該サーバーは2025年2月1日現在アクセスできません。};''
+
+* MirageFairy2023 [#r623c3d3]
+
+** MirageFairy2023非公式Wiki [#z570036d]
+
+> https://wikiwiki.jp/mifai2023/
+
+旧作のWikiです。
+
+* MirageFairy2019 [#v26535df]
+
+** MirageFairy2019　非公式Wiki [#e4f9005a]
+
+> https://w.atwiki.jp/miragefairy2019/
+
+旧作のWikiです。

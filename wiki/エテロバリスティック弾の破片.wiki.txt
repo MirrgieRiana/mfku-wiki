@@ -1,0 +1,13 @@
+
+* エテロバリスティック弾の破片（Etheroballistic Bolt Fragment） [#sace85ed]
+
+> 合金として生きるということ。
+
+> More abrasion resistant than lethal
+> 致死性よりも耐摩耗性が高い
+
+v16kuで追加されたTier4の素材アイテム。
+
+混沌のキューブの射撃弾がプレイヤーやモブにヒットすることでドロップする。
+
+かまどで焼くことでミラジディアンの欠片になる。

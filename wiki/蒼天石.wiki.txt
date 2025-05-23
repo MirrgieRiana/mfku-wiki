@@ -1,0 +1,74 @@
+
+* 蒼天石（Miranagite） [#s5d1bf2b]
+
+> 秩序の叛乱、天地創造の逆光。
+
+> Astral body crystallized by anti-entropy
+> 反エントロピーによって結晶化されたアストラル体
+
+v0で追加された素材アイテム。
+
+紅天石と異なりv0時点でも入手方法があるが、用途はない。
+
+----
+
+蒼天石鉱石から入手可能。
+
+----
+
+蒼天石は[[前作>https://wikiwiki.jp/mifai2023/%E8%92%BC%E5%A4%A9%E7%9F%B3]]から続投。
+- テクスチャ自体は[[MirageFairy2019のラブラドライト>https://w.atwiki.jp/miragefairy2019/pages/121.html]]の流用。
+-- MirageFairy2023ではラブラドライトを含む一切の宝石が登場しなかった。
+
+* 蒼天石鉱石（Miranagite Ore） [#x10aafc1]
+
+> 秩序の石は楽園の先に何を見るのか？
+
+> What lies beyond a Garden of Eden?
+> エデンの園の先には何があるのでしょうか？
+
+v0で追加。
+
+石の層に生成される。
+ダイヤモンド鉱石などと概ね同じ。
+
+幸運はFortuneの方のみ有効で、Luckは無効。
+
+* 深層蒼天石鉱石（Deepslate Miranagite Ore） [#c27433f1]
+
+> 楽園が楽園であるための奇跡。
+
+> Singularities built by the Creator
+> 創造主によって構築された特異点
+
+v0で追加。
+
+深層岩の層に生成される蒼天石鉱石。
+
+テクスチャが異なるだけだが、異なるポエムが設定されている。
+
+* 蒼天石ブロック（Miranagite Block） [#l9ad2fa3]
+
+> 虚空に導かれし、霊界との接合点。
+
+> Passivation confines discontinuous space
+> パッシベーションにより不連続な空間が閉じ込められる
+
+v2で追加された素材ブロック。
+
+MirageFairy2023から続投だが、テクスチャが変更され、端の黒い部分が無くなっている。
+
+v10から、ビーコンの土台にできるようになった。
+
+* 蒼天石の棒（Miranagite Rod） [#nc4b87ce]
+
+> 蒼天に従える光条は、魔力の祝福を示す。
+
+> Mana flows well through the core
+> マナはコアを通ってよく流れる
+
+v13で追加。
+
+蒼天石のスタッフの材料になる。
+
+[[MirageFairy2023初出の素材。>https://wikiwiki.jp/mifai2023/%E8%92%BC%E5%A4%A9%E7%9F%B3%E3%81%AE%E6%A3%92]]

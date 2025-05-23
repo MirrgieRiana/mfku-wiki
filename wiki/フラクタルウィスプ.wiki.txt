@@ -1,0 +1,32 @@
+
+* フラクタルウィスプ（Fractal Wisp） [#w2665e76]
+
+> 妖精の妖精の妖精の妖精の妖精の妖精の妖精
+> の妖精の妖精の妖精の妖精の妖精の妖精の妖
+
+> The fairy of the fairy of the fairy
+> of the fairy of the fairy of the f
+> 妖精の妖精の妖精の妖精の妖精の妖精の妖精
+
+v2で追加された素材。
+
+v9から、耐火性能を得て火や溶岩に触れても消えなくなった。
+
+** 入手 [#fe04fea2]
+
+ハイメヴィスカの樹洞から入手できる。
+
+** 用途 [#mfb4fd44]
+
+v3で即席ファンタスティックカーニバルの納品アイテムに指定された。
+
+** 考察 [#u91d7cf9]
+
+妖精の英語版の命名規則によると、「〜精」の部分は「The fairy of 〜」と訳される。
+司書精なら「the fairy of librarian」で、パン精なら「the fairy of bread」である。
+「The fairy of the fairy of …」は、「The fairy of the fairy …」の妖精、つまり自分自身の妖精と考えられる。
+
+** 余談 [#v9aa03da]
+
+フラクタルとは全体の小さいコピーを一部分に含む図形のこと。
+ブロッコリーのように再帰的に同じ構造が現れる。

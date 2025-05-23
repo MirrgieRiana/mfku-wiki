@@ -1,0 +1,21 @@
+
+* 石膏ボード（Drywall） [#ee8ade39]
+
+> オフィスの天井等にどうぞ。
+
+> Please use on the office ceiling, etc.
+> オフィスの天井などにご使用ください。
+
+v3で追加された装飾ブロック。
+
+----
+
+ポエムは、[[初出作品でのアップデート記事の文章から>https://miragefairy.notion.site/MirageFairy2019-v27-f8b876c83cf24ccc9bae80a19f12429a#e8f84d0d7e5d40ba95f2651b673771a1]]。
+
+** 入手 [#lc010a05]
+
+v3現在、入手方法はセラミックレンガ募集のお知らせのみ。
+
+** 余談 [#s7579f4f]
+
+[[MirageFairy2019からの復活である>https://w.atwiki.jp/miragefairy2019/pages/257.html]]。

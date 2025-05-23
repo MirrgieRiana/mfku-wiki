@@ -1,0 +1,557 @@
+
+#contents
+
+* 概要 [#g41698e8]
+
+v0で追加されたシステム。
+
+魔法植物および、その種子（各種球根など）であるアイテムが持っているパラメータ。
+
+----
+
+特性は、「空気適応101」のように2進数で表記されるレベルを持つ。
+- 「空気適応101」は下から5番目の強さである。
+- 特性の交配は2進数の各ビットごとに判定されるため、レベルの大小よりもどのビットを持っているかが重要である。
+- ビットごとに入手手段が異なり、レベル1が最高レアだったりすることも多い。
+
+----
+
+特性は、0個以上の特性条件と、特性効果を持つ。
+- 同じ特性効果でも特性によってはその効果量が異なる場合がある。
+
+----
+
+v12から、各特性にアイコンやポエムが設定された。
+- REIや、魔法植物の種子や生えている株をスニーク中に使用して出てくるGUIから参照可能。
+
+** 特性条件 [#r0ac3cde]
+
+特性条件は、環境の状況に従ってパーセンテージを計算し、特性効果がどのくらいの割合で発動するかを左右する。
+特性条件が設定されていない特性は常に100%、複数設定されている場合はそれらを乗算する。
+
+特性条件の一覧はページ下部を参照。
+
+** 特性効果 [#r0ac3cde]
+
+特性効果は、魔法植物に対して成長速度や収穫量といった実際の効果を与える。
+
+特性効果の一覧はページ下部を参照。
+
+* 入手 [#a0f00255]
+
+まだ入手したことがない特性を新規に入手するは、基本的に地形生成される魔法植物から入手する。
+
+----
+
+魔法植物の種類ごとに「スポーン可能な特性」が、
+特性ごとに「出現可能なバイオーム」と「レア度」が設定されており、
+魔法植物は地形生成時にその場所にあった特性を決められた確率で持って生まれる。
+- 特性を交配で付与する場合は、魔法植物ごとのスポーン特性リストを無視し、交配が可能であればどんな特性でも付与できる。
+
+* 交配 [#r2b7a205]
+
+交配を行うことで、魔法植物の特性をミックスできる。
+
+** 手順 [#z6725b50]
+
++ 交配を行うには、まず同種の（交雑特性効果がある場合は同じ「科」の）魔法植物を隣接して植える必要がある。
++ 次に、両方とも最大の成長段階にする。
++ そして片方を収穫した際に、ドロップした種子（球根）が交配された種子になる。
+-- 収穫時に追加の種子がドロップしなければ交配は起こらない。
+-- 株を解体した際にも交配が行われるが、確定で戻ってくる分の種子1個は交配されない。
+
+----
+
+より厳密には、「株の解体や収穫によって追加種子をドロップする際に、隣接マスに適切な成長段階の同種の魔法植物があった場合に、追加種子が交配済みの種子になる」という判定。
+- 開花状態の株が並んでいるとき、端から順番に壊せば最後の1個以外は交配種子になる。
+- 中央を先に壊した場合、孤立した株が複数生じ、交配のチャンスが減ってしまう。
+
+----
+
+単体で植えるか、完全に同一の遺伝子の株だけでまとめて植えれば必ず同じ種子が複製される。
+
+** 特性のミックスのアルゴリズム [#e982de33]
+
+*** 交配相手の選択 [#ye7af938]
+
+特性は必ず2個の親の間で起こる。
+- 隣接マスに条件を満たす株が複数あった場合、ランダムで1個の相手と交配される。
+
+*** 特性の継承 [#y5a44400]
+
+両親が持っているすべての特性について、各ビットごとに、
+両親が持っているものは確実に継承、
+片親だけが持っているものは50％の確率で継承、
+両親が持っていないものは確実に不継承となる。
+
+----
+
+例えば、空気適応101の親Aと空気適応1001の親Bが交配した場合、
+子は以下の4パターンのうちのいずれかの空気適応を持つ。
+
+# 0 1 0 1  親A
+# 1 0 0 1  親B
+# 　
+# 0 0 0 1  パターンA  25%
+# 0 1 0 1  パターンB  25%
+# 1 0 0 1  パターンC  25%
+# 1 1 0 1  パターンD  25%
+#       ↑両親が持っているので確実に継承される
+#     ↑両親が持っていないので確実に継承されない
+#   ↑片親が持っているので50%の確率で継承される
+# ↑片親が持っているので50%の確率で継承される
+
+*** 特性の選択 [#ff6ed54a]
+
+合計の特性が15個を超えた場合、15個以下になるまでランダムに特性を消す。
+ただし、両親が所持しているビットを含む特性は確定継承特性となり、消えることはない。
+
+----
+
+特性には基本的にデメリットは無いものの、発動していない特性は付いているだけで枠数を食う。
+場合によっては特性を退化させるためにわざわざ交配することも考えられる。
+
+上の項目で述べたように、両親が持っている特性ビットを自由に削除することはできない。
+特性ビットを消すにはそのビットを持っていない親が必要である。
+
+* 余談 [#jbe3f866]
+
+特性システムはv12で根本的に多くの部分が変更された。 
+- Wikiの情報はv11以前のものも多く、一部は役に立たないこともある。
+
+* 一覧 [#l839a485]
+
+** 特性条件 [#r0ac3cde]
+
+*** 湿った地面 [#u114ab16]
+
+砂は25%、土は50%、耕地は湿り具合によって50%から100%の間で変動。
+
+*** 鉱物質の地面 [#o25e8a0c]
+
+銅・石炭ブロックは20%。
+鉄・レッドストーン・ラピスラズリブロックは40%。
+金・ネザークォーツブロックは60%。
+エメラルド・アメジストブロックは80%。
+ダイヤモンドブロックは100%。
+
+*** 硬い地面 [#a475a22b]
+
+丸石を100%としたときの地面の硬さに従って変動する。
+ただしつるはしで採掘可能でなければならない。
+高くても200%までしか伸びない。
+鉱石ブロックや原石ブロック、石炭ブロック、黒曜石などが狙い目。
+
+*** 光 [#bedd48ba]
+
+光量が8から15にかけて、0%から100%の間で変動。
+- 光量7以下は0%。
+
+*** 闇 [#n79b5696]
+
+光量が7から0にかけて、0%から100%の間で変動。
+- 光量8以上は0%。
+
+*** 低い気温 [#naf8aed4]
+
+バイオームの温度が低いときに100%、そうでないときに0%。
+
+*** 普通の気温 [#p898e69e]
+
+バイオームの温度が中程度のときに100%、そうでないときに0%。
+
+*** 高い気温 [#d159d274]
+
+バイオームの温度が高いときに100%、そうでないときに0%。
+
+*** 低い湿度 [#s8df337d]
+
+バイオームの湿度が低いときに100%、そうでないときに0%。
+
+*** 普通の湿度 [#gb39480f]
+
+バイオームの湿度が中程度のときに100%、そうでないときに0%。
+
+*** 高い湿度 [#d652ab96]
+
+バイオームの湿度が高いときに100%、そうでないときに0%。
+
+*** 高地 [#nbe5587b]
+
+Y64からY192にかけて、0%から100%に効果が増加。
+ネザーは0%、エンドは100%で固定。
+
+*** 低地 [#c228824c]
+
+Y64からY-64にかけて、0%から100%に効果が増加。
+ネザーは100%、エンドは0%で固定。
+
+*** 屋外 [#t4105f79]
+
+その場所が屋外であるときに100%、そうでないときに0%。
+- パッシブスキルの屋外判定と同一の部分を参照する。
+
+*** 天然 [#w3049d23]
+
+その株が地形生成直後で、1度も収穫していない場合にのみ有効。
+- v11以前に生成されたものはすべて非天然扱い。
+
+** 特性効果 [#s2bac0c5]
+
+*** 栄養値 [#u775bbb7]
+
+実際の成長速度にそのまま乗算される。
+0%の場合、まったく成長しない。
+
+*** 気温環境値 [#cb6cc0f5]
+
+実際の成長速度にそのまま乗算される。
+0%の場合、まったく成長しない。
+
+*** 湿度環境値 [#cb6cc0f5]
+
+実際の成長速度に、20%を足して乗算される。
+0%の場合、少し成長する。
+
+*** 成長速度 [#r5e6ad75]
+
+成長の速度に(100% + 成長速度)を乗じる。
+
+*** 種子生成 [#hbfcc0f8]
+
+収穫時にその魔法植物の種子（＝球根）を生成する。
+
+*** 果実生成 [#b4b59c62]
+
+収穫時に果実に設定されている生産物を生成する。
+
+*** 葉面生成 [#xc2922e4]
+
+収穫時に葉に設定されている生産物を生成する。
+
+*** 希少品生成 [#p54ff27e]
+
+収穫時にレア素材を生成する。
+
+*** 生産能力 [#t36997c9]
+
+生産物の獲得量に(100% + 生産能力)を乗じる。
+
+*** 経験値 [#v0619366]
+
+収穫時に経験値をドロップする。
+100%のときに、1回の収穫時に1ドロップする。
+v9までは開花していない株を壊しても経験値を生成するバグがあった。
+v11から、自然落果時は無効になった。
+
+*** 幸運係数 [#g6a0717a]
+
+生産物の獲得量に(100% + 幸運係数 × 幸運エンチャント（Fortune）および運アトリビュート（Luck）の合計値)を乗じる。
+
+*** 自然落果 [#jb2c1f4c]
+
+成長判定が終わった後、収穫可能であれば表記された確率で自動で収穫する。
+- 10レベルごとに50%の確率で伸びる。
+
+魔法植物が他のアイテムや経験値オーブと重なっている場合は無効になる。
+
+*** 交雑 [#q425c25b]
+
+交配時に、同一の「科」の異種の魔法植物が、表記された確率で交配対象に加わる。
+- 収穫する方に付与する必要があり、交配相手側に付与されたものは無視される。
+- 種子の種類は収穫した魔法植物のもので固定のため、交雑によって特性を輸入することはできるが、輸出はできない。
+
+** 特性 [#t7a34e85]
+
+ここではポエムのみ掲載する。
+- アイテムのポエムとは異なり、特性ポエムの英語版には日本語版と概ね同じことが書いてある。
+
+性能はREIを参照。
+
+*** エーテル呼吸 [#h42596f7]
+
+> 情緒体の作用によってエーテルを気化し、魂の渦を生成する。数十億年前にエテロバクテリアが姿を現して以来、宇宙には意志を持った生命で溢れた。
+
+> Through the action of the astral radiation, ether is vaporized, generating a vortex of souls. Since the appearance of etherobacteria billions of years ago, the universe has been filled with life forms possessing will.
+> アストラル放射線の作用によりエーテルが蒸発し、魂の渦が発生します。数十億年前にエーテルバクテリアが出現して以来、宇宙は意志を持つ生命体で満たされています。
+
+*** 光合成 [#oc639b29]
+
+> 脱フロギストン反応により、水と二酸化炭素から酸素と有機物が生産される。光合成はエーテル呼吸と並ぶ植物の生命活動の根幹であり、草食動物、肉食動物、人間など、多くの生物の存在を成り立たせている。
+
+> Through the Dephlogistication Reaction, oxygen and organic matter are produced from water and carbon dioxide. Photosynthesis is a fundamental life activity of plants, alongside etheric respiration, and it supports the existence of many organisms, including herbivores, carnivores, and humans.
+> 脱フロジスティケーション反応により、水と二酸化炭素から酸素と有機物が生成されます。光合成はエーテル呼吸と並んで植物の基本的な生命活動であり、草食動物、肉食動物、人間を含む多くの生物の存在を支えています。
+
+*** 闇合成 [#ed527501]
+
+> オーラ濃度のゆらぎにより、環境中の有機元素からエーテル結晶を成長させる。これはアンデッド生物の形成と同じ作用である。
+
+> By fluctuations in aura concentration, ether crystals grow from organic elements in the environment. This process is the same as the formation of undead creatures.
+> オーラ濃度の変動により、環境中の有機元素からエーテル結晶が成長します。このプロセスは、アンデッドクリーチャーの形成と同じです。
+
+*** 養分吸収 [#m4cfdb87]
+
+> 根の細胞のイオン濃度が周囲の土中に比べて高いとき、浸透圧によって土中の水分が養分とともに根に吸収される。この過程には葉の蒸散作用が不可欠である。
+
+> When the ion concentration in the root cells is higher than that in the surrounding soil, osmosis causes the water in the soil, along with nutrients, to be absorbed into the roots. This process requires the transpiration action of the leaves.
+> 根の細胞のイオン濃度が周囲の土壌のイオン濃度よりも高い場合、浸透圧により土壌の水が栄養素とともに根に吸収されます。このプロセスには葉の蒸散作用が必要です。
+
+*** 鉱物吸収 [#w2b9fc4e]
+
+> 宝石質に含まれる光のオーラが自然アストラル線によって励起され、酵素の作用で生成された増殖のエルグが植物組織の自己複製作用を誘発する。
+
+> The shine aura contained within the gemstone is excited by natural astral rays, and the replication erg generated by enzymatic action triggers the self-replication of plant tissues.
+> 宝石に含まれる輝きのオーラは天然のアストラル光線によって励起され、酵素の作用によって生成される複製エネルギーが植物組織の自己複製を引き起こします。
+
+*** 空間適応 [#c2f8edc9]
+
+> 高エネルギーアストラル放射線によってエーテルを分解することで、宇宙空間での生命維持を行う。この作用は岩石惑星のテラフォーミングの上で重要である。
+
+> By decomposing ether with high-energy astral radiation, life support is maintained in outer space. This process is essential for the terraforming of rocky planets.
+> 高エネルギーのアストラル放射線でエーテルを分解することで、宇宙空間での生命維持が維持されます。このプロセスは岩石惑星のテラフォーミングに不可欠です。
+
+*** 低温適応 [#jc810cf1]
+
+> 低い日射量、低い気温、水分の凍結、雪による遮蔽、過酷な低温環境に適応した植物だけが極寒の氷の下で生き残ることができる。
+
+> Only plants that have adapted to low solar radiation, low temperatures, water freezing, snow cover, and harsh cold environments can survive under the extreme cold of the ice.
+> 低太陽放射、低温、水の凍結、積雪、厳しい寒冷環境に適応した植物だけが、氷の極寒の下で生き残ることができます。
+
+*** 中温適応 [#l990696c]
+
+> 快適な気温の環境では、耐寒や耐暑に割り当てる進化的エネルギーを節約できる。その結果、植物はより多くのエネルギーを成長や繁殖に割くことができる。
+
+> In environments with comfortable temperatures, plants can save evolutionary energy that would otherwise be allocated to cold or heat resistance. As a result, they are able to devote more energy to growth and reproduction.
+> 快適な温度の環境では、植物は耐寒性や耐熱性に割り当てられる進化エネルギーを節約できます。その結果、成長と繁殖に多くのエネルギーを費やすことができます。
+
+*** 高温適応 [#hec968c1]
+
+> 植物の楽園であるジャングル地帯、炎天下の砂漠、灼熱地獄、一口に高温環境といっても、その実態は様々である。この形質は、高温環境全般で役に立つ小技の寄せ集めにすぎない。
+
+> The jungle, a paradise for plants, the scorching desert, the fiery inferno&#8212;though all these are high-temperature environments, their actual conditions vary greatly. This trait is merely a collection of minor techniques that prove useful across various high-temperature environments.
+> 植物の楽園であるジャングル、焼けつく砂漠、灼熱の地獄など、これらはすべて高温環境ですが、実際の状況は大きく異なります。この特性は、さまざまな高温環境で役立つことが証明されている小さなテクニックの集まりにすぎません。
+
+*** 乾燥適応 [#u77cba9c]
+
+> 進化とは、ときに非情である。種という全体の繁栄が、必ずしも個々の個体の幸福に繋がるとは限らないのだ。
+
+> Evolution is often ruthless. The prosperity of the species as a whole does not necessarily lead to the happiness of each individual.
+> 進化はしばしば容赦のないものです。種全体の繁栄が必ずしも個々の幸福につながるわけではありません。
+
+*** 中湿適応 [#rb2bd897]
+
+> 極端でない湿度は、植物にとっても快適であり、多様な植物が繁栄する。ここでは、逃げも隠れもできない、小細工なしの生存競争が求められる。普通の世界で勝利することが最も難しいのだ。
+
+> Moderate humidity provide comfort for plants as well, allowing a diverse range of species to thrive. In such an environment, a straightforward struggle for survival is required, with no possibility of escape or hiding, and no tricks. Winning in an ordinary world is the most challenging of all.
+> 適度な湿度は植物にとっても心地よく、多様な種が繁栄することができます。そのような環境では、逃げることも隠れることもトリックもできない、単刀直入な生存競争が求められます。普通の世界で勝つことは、何よりも難しいことです。
+
+*** 湿潤適応 [#ud9c2ca3]
+
+> H2OとCO2をO2と有機物に加工するフローを最も効率的に設計・運用した工場が、最終的に湿潤な環境を制覇する。
+
+> The plant that designs and operates the most efficient flow for converting H2O and CO2 into O2 and organic matter will ultimately dominate humid environments.
+> H2OとCO2をO2と有機物に変換する最も効率的な流れを設計して運用する植物が、最終的に湿気の多い環境を支配するでしょう。
+
+*** 種子生成 [#fbe4de3f]
+
+> 種子とは、狭義にはめしべの下部に形成される繁殖組織をいう。しかし、妖花目の植物は種子がすぐに欠落し拡散されるものが多いため、便宜上球根を種子同然に扱うことが多い。
+
+> Strictly speaking, seeds refer to the reproductive structures formed in the lower part of the pistil. However, in many plants in the order Miragales, seeds tend to detach and disperse quickly. For convenience, bulbs are often treated as seeds in these plants.
+> 厳密に言えば、種子は雌しべの下部に形成される生殖構造を指します。しかし、ミズゴケ目の多くの植物では、種子はすぐに分離して散布する傾向があります。便宜上、これらの植物では球根が種子として扱われることがよくあります。
+
+*** 果実生成 [#uea25421]
+
+> ヒトの祖先は樹上生活を行い、果実食であった。ヒトは肉を生食できないが、果実は生食することができる。ところで、興味深いことに妖精の栄養価は一般的な果実のそれと多くが共通している。
+
+> Human ancestors lived arboreal lives and primarily consumed fruit. While humans cannot eat raw meat, they can eat raw fruit. Interestingly, the nutritional values of fairies shares many similarities with that of common fruit.
+> 人間の祖先は樹上生活を送り、主に果物を食べていました。人間は生肉を食べることはできませんが、生の果物は食べることができます。興味深いことに、妖精の栄養価は一般的な果物と多くの類似点があります。
+
+*** 葉面生成 [#p4a3ee83]
+
+> 12-8億年前、緑色植物が出現し、炭素固定能力を発達させた一方で、エテロバクテリアとの細胞内共生を退化させた。現生植物の多くに知性が欠落している事実は、この進化の名残りと言われている。
+
+> Between 1.2 and 0.8 billion years ago, green plants emerged and developed the ability to fix carbon, while simultaneously losing their symbiotic relationship with etherobacteria. The fact that most modern plants lack intelligence is said to be a remnant of this evolutionary change.
+> 12億年から8億年前、緑色植物が出現し、炭素を固定する能力を発達させ、同時にエーテル細菌との共生関係を失いました。現代の植物のほとんどが知性を持たないという事実は、この進化の変化の名残であると言われています。
+
+*** 希少品生成 [#x1f365f6]
+
+> この特性は、実際には遺伝子上には存在せず、果実部におけるプラントオパールの結晶化など、人間が希少と判断するいくつかの部位を形成する遺伝的形質をまとめたものである。
+
+> This trait does not actually exist as a single gene, but is instead a collection of various genetic characteristics responsible for the formation of certain parts, such as the crystallization of phytoliths in the fruit, which humans deem rare or valuable.
+> この特性は実際には単一の遺伝子として存在するわけではなく、果実の植物珪酸体の結晶化など、人間が希少または貴重と見なす特定の部分の形成に関与するさまざまな遺伝的特徴の集合体です。
+
+*** 経験値生成 [#wcc165fd]
+
+> 植物は意識体験をするか？という問いかけは、長年の議論の対象であった。経験値オーブを生成する植物の発見は、この議論を新たな局面へと導いた。
+
+> The question of whether plants experience consciousness has long been a subject of debate. The discovery of plants that generate experience orbs has brought this discussion to a new stage.
+> 植物が意識を持っているかどうかという問題は長い間議論の対象となってきました。経験オーブを生成する植物の発見により、この議論は新しい段階に進みました。
+
+*** 妖精の祝福 [#b9d60f03]
+
+> 力強い光が世界を照らす。朗らかな風が木々を揺らす。ミラージュの花びらが頬を撫でる。渦巻く花粉は一つになり、妖精へと姿を変える。妖精は知っている。この世のすべての運命を。
+
+> A powerful light illuminates the world. A gentle breeze sways the trees. Mirage petals brush against the cheeks. Swirling pollen comes together, transforming into the body of a fairy. The fairy knows. The fate of everything in this world.
+> 強力な光が世界を照らします。穏やかな風が木々を揺らします。蜃気楼の花びらが頬を撫でます。渦巻く花粉が集まり、妖精の体に変身します。妖精は知っています。この世界のすべての運命を。
+
+*** 四つ葉 [#cb68d044]
+
+> ある種の植物の葉が4枚組となる確率は通常1万分の1以下であり、これは発見者の運気の高さを反映している。したがって、すべての葉が4枚組となるように乱数調整を行うことで、理論上全人類の運気を常に最大化できる。
+
+> The probability of a certain type of plant having a set of four leaves is typically less than 1 in 10,000, reflecting the high luck of the discoverer. Therefore, by adjusting random numbers so that all leaves are in sets of four, it is theoretically possible to maximize the luck of all humanity at all times.
+> 特定の種類の植物が4枚の葉を持つ確率は通常10,000分の1未満であり、発見者の幸運の高さを反映しています。したがって、すべての葉が4枚になるように乱数を調整することで、理論的にはすべての人類の幸運を常に最大化することができます。
+
+*** 節状の茎 [#ydb6e769]
+
+> 妖花目の植物の茎は、竹や麦などと同様に節目を持つことで知られる。これらの節目は失活した成長点であり、原理的にはすべての節目で成長を行うことにより高速な生育が可能である。
+
+> The stems of plants in the order Miragales are known for having nodes, similar to bamboo or wheat. These nodes are deactivated growth points, and in principle, rapid growth is possible by activating growth at all nodes simultaneously.
+> ミズキ目の植物の茎には、竹や小麦と同様に節があることが知られています。これらの節は不活性化された成長点であり、原理的にはすべての節で同時に成長を活性化することで急速な成長が可能です。
+
+*** 禁断の果実 [#x298eab4]
+
+> 意識、記憶、魂、遺伝子、これらすべての情報は、気相エーテル体の渦状運動によってもたらされる。禁断の果実に束縛されたアストラル渦は、時空を超えたありとあらゆる知識を持つというアカーシャの悪魔につながることが予言されている。
+
+> Consciousness, memory, soul, and genes--all this information is produced by the vortex motion of the gaseous etheric body. It is prophesied that the astral vortex, bound by the forbidden fruit, will connect to the Akashic demon, who possesses all knowledge beyond time and space.
+> 意識、記憶、魂、遺伝子、これらすべての情報は、気体エーテル体の渦運動によって生み出されます。禁断の果実に縛られたアストラル渦は、時間と空間を超えたすべての知識を持つアカシックの悪魔とつながると予言されています。
+
+*** 金のリンゴ [#s81ce799]
+
+> ヒツジをラピスラズリの粉末で着色して毛を刈り取ると、そのヒツジは以後、青色の毛を生やすようになる。このような現象を外因性色素誘導と呼ぶ。
+
+> When a sheep is dyed with lapis lazuli powder and then sheared, it will subsequently grow blue wool. This phenomenon is known as exogenous pigment induction.
+> 羊をラピスラズリの粉で染めてから毛を刈ると、その後青い羊毛が生えます。この現象は外因性色素誘導として知られています。
+
+*** 棘のある葉 [#o140b08d]
+
+> 棘は水分の蒸散を防ぎ、草食動物からの防御にも使われる。ミラージュ科の植物が持つ棘はケイ酸塩を含む鋭利な組織でできており、人間の皮膚を容易に傷つけ、軽度の炎症を引き起こす。
+
+> Spines prevent the loss of water through transpiration and are also used for defense against herbivorous animals. The spines of plants in the Miragaceae family are made of sharp tissues containing silicates, which can easily pierce human skin and cause mild inflammation.
+> 棘は蒸散による水分の損失を防ぎ、草食動物に対する防御にも使用されます。ミズキ科の植物の棘は、ケイ酸塩を含む鋭い組織でできており、人間の皮膚に簡単に突き刺さり、軽い炎症を引き起こします。
+
+*** 砂漠の宝石 [#gbd0dbab]
+
+> 美しい宝石を実らせる植物の伝承は各地の砂漠地帯において見られ、信仰の対象とされる。生理学的には、土中の水分含有量が少ないために過剰に吸収した金属イオンを排出するために形成される。
+
+> Legends of plants that bear beautiful gemstones can be found in various desert regions and are often revered. Physiologically, these gemstones are formed as a means for the plants to expel excess metal ions, absorbed due to the low moisture content in the soil.
+> 美しい宝石を生やす植物の伝説は、さまざまな砂漠地帯に見られ、しばしば崇拝されています。生理学的には、これらの宝石は、土壌の水分含有量が低いために吸収された余分な金属イオンを植物が排出する手段として形成されます。
+
+*** 発熱機構 [#a4f66441]
+
+> 細胞内に共生するバクテリアが、代謝によって熱を発生させる。この熱によって低温環境で成長が停滞することを防ぐ。
+
+> Bacteria symbiotic within the cells generate heat through their metabolism. This heat helps prevent growth from stalling in cold environments.
+> 細胞内に共生する細菌は代謝によって熱を発生し、寒冷な環境でも成長が止まるのを防ぐ。
+
+*** 浸水耐性 [#f79195a0]
+
+> 中空の茎を発達させ、能動的に酸素を送り込むことで、浸水状態にあっても根が酸欠状態になるのを防ぐ。これにより、他の植物が根腐れを起こすような環境でも生育できる。
+
+> By developing hollow stems that actively transport oxygen, this plant prevents its roots from becoming oxygen-deprived even in waterlogged conditions. As a result, it can thrive in environments where other plants would suffer from root rot.
+> 酸素を積極的に運搬する中空の茎を発達させることで、水浸しの状態でも根が酸素不足にならない。その結果、他の植物が根腐れを起こすような環境でも生育できる。
+
+*** 高嶺の花 [#se62829c]
+
+> 逆境に咲く花は、どんな花よりも希少で美しい。たとえそれが一瞬の輝きであったとしても、手に入れることのできない、あこがれの存在として人々の胸に刻まれる。
+
+> A flower that blooms in adversity is rarer and more beautiful than any other. Even if it shines only for a fleeting moment, it becomes an unattainable object of desire, forever etched in people's hearts.
+> 逆境に咲く花は、他のどの花よりも希少で美しい。一瞬の輝きであっても、人の心に永遠に刻まれる、手の届かない憧れの的となる。
+
+*** 肉厚の葉 [#a21ee7bd]
+
+> 水分の蒸発を防ぐために空気との接触面積を最小化するように進化した結果、葉は肉厚になり、内部に水分を蓄えるようになった。
+
+> As a result of evolving to minimize surface area exposed to the air in order to prevent water loss, the leaves have become thick and are now capable of storing water internally.
+> 水分の損失を防ぐため、空気に触れる面積を最小化するよう進化した結果、葉は厚くなり、内部に水を蓄えるようになった。
+
+*** 自然落果 [#z200cff6]
+
+> 植物の体の一部が欠落し、地面に落ちる。それを風や動物、ときには人間が遠くへ運ぶ。収穫の自動化は、植物にとっては繁殖の手段にすぎないのだ。
+
+> A part of the plant's body falls off and drops to the ground. The wind, animals, and sometimes even humans carry it far away. For the plant, the automation of harvesting is merely a means of reproduction.
+> 植物の体の一部が剥がれて地面に落ちる。風や動物、時には人間が遠くまで運んでいく。植物にとって、収穫の自動化は単なる繁殖手段に過ぎない。
+
+*** 食虫植物 [#n29fe98c]
+
+> 昆虫などの小動物を捕らえ、消化液により分解する。栄養の少ない土壌で生活するための戦略の一つである。
+
+> It captures small animals like insects and breaks them down with digestive fluids. This is one of the strategies for surviving in nutrient-poor soil.
+> 昆虫などの小動物を捕らえ、消化液で分解する。これは栄養の乏しい土壌で生き残るための戦略の一つです。
+
+*** エーテル捕食 [#w4ba077d]
+
+> 生きとし生ける者はみな、エーテルの魂を持つ。なれば、妖精の魂はどこから来るのか？ミラージュはある意味肉食植物だ。
+
+> All living beings possess an etheric soul. If that is the case, where do the souls of fairies come from? In a sense, the Mirage is a carnivorous plant.
+> すべての生き物はエーテルの魂を持っています。だとしたら、妖精の魂はどこから来るのでしょうか。ある意味、ミラージュは食虫植物です。
+
+*** アスファルトに咲く花 [#oa3eb90f]
+
+> 小さな花が硬い地面を穿ち瀝青を栄養に変えるその姿は、植物の持つ力強い生命力の象徴として知られる。
+
+> The sight of a small flower piercing through hard ground and transforming bitumen into nutrients is known as a symbol of the powerful vitality possessed by plants.
+> 小さな花が固い地面を突き破り、アスファルトを養分に変える様子は、植物の持つ強力な生命力の象徴として知られています。
+
+*** 種の繁栄 [#ne8907db]
+
+> 多くの子を産む者、変化に柔軟な者、欲張りな者、敵を蹴落とす者、結果的に多くの子孫を遺せた者が生存競争を勝ち抜くのだ。
+
+> Those who bear many offspring, those who are flexible to change, those who are greedy, those who eliminate their enemies, and those who, in the end, leave behind many descendants are the ones who win the struggle for survival.
+> 子孫を多く残す者、変化に柔軟に対応する者、貪欲な者、敵を排除する者、そして最終的に多くの子孫を残す者が、生存競争に勝つのです。
+
+*** 幻の花 [#t7c8bfc9]
+
+> 遥か妖精の地に咲く幻の花。その正体は幻のような花か？幻を見せる花か？
+
+> A phantom flower that blooms in the distant land of fairies. Is its true nature that of an illusory flower? Or is it a flower that shows illusions?
+> 遠い妖精の国に咲く幻の花。その正体は幻の花なのか？それとも幻を見せてくれる花なのか？
+
+*** 悠久の秘宝 [#hf8c8a42]
+
+> 自然が見せる神秘の果実。多くの欲深き人間がその栽培化を試みたものの、成功した者は誰一人として居なかったという。
+
+> A mysterious fruit shown by nature. Many greedy humans attempted to cultivate it, but not a single one succeeded, or so the story goes.
+> 自然が見せてくれる不思議な果実。貪欲な人間が数多く栽培を試みたが、誰一人として成功しなかったという伝説があります。
+
+*** シャルパの秘宝 [#d35ec92b]
+
+> 人々は昔から、理解を超えた対象を神秘と呼び、神聖視してきた。結晶の生成は妖花目の植物における生来の能力であり、これを妨げる遺伝子を破壊することは容易だ。人類は神秘を超越したのだ。
+
+> Since ancient times, people have revered what lies beyond their understanding, calling it mysterious or sacred. The formation of crystals is a natural ability in plants of the Miragales order, and it is easy to destroy the genes that prevent this. Humanity has transcended the mysterious.
+> 古来、人は理解を超えたものを神秘的、神聖なものと称して崇めてきた。結晶形成はミラガレス科の植物の自然な能力であり、それを妨げる遺伝子を破壊するのは容易である。人類は神秘を超越した。
+
+*** 交雑 [#n23c4774]
+
+> 同じ科の異種の植物との交配により、その植物種には本来備わらない遺伝的形質を持たせることができる。
+
+> By crossbreeding with different species of plants within the same family, it is possible to introduce genetic traits that the original plant species does not naturally possess.
+> 同じ科の異なる種の植物を交配することで、元の植物種が本来持っていない遺伝的特徴を導入することができる。
+
+*** 自我を持つ植物 [#m6af5f9b]
+
+> 固有の飛行性動物を欠いた開拓型惑星において、空中散布式の生殖細胞に運動能力を与えることは、個体同士の遭遇確率の点で有益である。
+
+> On a colonized planet lacking native flying animals, giving mobility to airborne reproductive cells is beneficial in terms of increasing the probability of encounters between individual organisms.
+> 在来の飛翔動物がいない植民惑星では、空中生殖細胞に可動性を与えることは、個体間の遭遇確率を高めるという点で有益である。
+
+*** 終焉の花 [#sadb0548]
+
+> 真空が崩壊し、世界という概念が消滅を迎えるとき、その花は最後の瞬間まで笑顔を絶やさなかった。
+
+> When the vacuum decayed and the concept of the world met its end, that flower never lost its smile until the very last moment.
+> 真空が崩壊し、世界の概念が終焉を迎えたとき、その花は最後の瞬間まで笑顔を失わなかった。
+
+幻花ファントムの固有特性。
+- 幻花ファントムにまつわるものには、よく修繕や回復の効果が付与されている。
+
+*** アカーシャのお導き [#y50175ff]
+
+> 生命組織の構造的・生理学的な精緻さおよび不完全さは、生命が大いなる知性によって、泥酔しながら設計されたことを示唆する。
+
+> The structural and physiological intricacy and imperfection of living organisms suggests that life was designed by a greater intelligence after drinking heavily.
+> 生物の構造的、生理学的複雑さと不完全さは、大酒を飲んだ後のより偉大な知性によって生命が設計されたことを示唆している。
+
+かなりのスピードで成長するようになる。
+
+アカーシャによる生命設計の針でのみ付与できる。
+- クリエイティブ専用特性。

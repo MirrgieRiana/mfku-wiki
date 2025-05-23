@@ -1,0 +1,2 @@
+参照回数の多いページ上位100件を表示します。（Today）
+#popular(100,FrontPage,true)

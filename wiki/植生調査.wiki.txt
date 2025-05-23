@@ -1,0 +1,33 @@
+
+* 植生調査（Vegetation Survey） [#gcb60436]
+
+v3で追加されたフェアリークエスト。
+
+** クエスト [#k5f1a3f0]
+
+ハビタビリス・ゾーナとは、MirageFairy2023の舞台であるDemon of the Mirageサーバーのワールドのこと。
+前の惑星は環境破壊で居住不能となり、宇宙に進出して発見した居住可能な惑星がハビタビリス・ゾーナであった。
+
+** 取引 [#mfd89865]
+
+ハイメヴィスカの原木4個と葉ブロック16個を蒼天石にするという至って真面目なクエスト。
+
+** 全文 [#mb80ac44]
+
+> 植生調査
+
+> 妖精の樹…？ここはハビタビリスゾーナから100万光年以上も離れた場所のはず…。この星の過去を占ってみたいから、植生サンプルを送ってくれないかしら？
+
+> みらなぎ聖騎士団
+> 東雲占卜院
+> るめり
+
+----
+
+> Vegetation Survey
+
+> The fairy trees...? We should be over a million light-years away from the Habitabilis Zona. I'm curious to divine the past of this star, so would you consider sending me samples of the vegetation?
+
+> The Pearl Knights of Miranagi
+> Shinonome Astrology Academy
+> Rumeri

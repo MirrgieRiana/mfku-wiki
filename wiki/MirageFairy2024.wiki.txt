@@ -1,0 +1,26 @@
+
+2023年に開発がスタートしたMirageFairyの3番目の公開MOD。
+2025年2月1日時点での著者は、「MirageFairy開発者-G7」。
+
+MirageFairy2024-Kakera-Unofficialの派生元の作品。
+
+* 依存関係 [#b0e39d3d]
+
+- Minecraft 1.20.1
+- Fabric
+- TerraBlenader
+- Fabric Language Kotlin
+- Fabric API
+- Cloth Config API
+- oωo (owo-lib)
+- Faux Custom Entity Data
+
+* 外部リンク [#p23a8377]
+
+** GitHub [#h11910fa]
+
+https://github.com/MirageFairy/MirageFairy2024
+
+** 配布 [#v311ae58]
+
+ダウンロードはこのWikiのメニューにある公式リンクからできます

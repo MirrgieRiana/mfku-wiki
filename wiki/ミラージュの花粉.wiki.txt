@@ -1,0 +1,127 @@
+
+* 全般 [#ne4505ca]
+
+v0で追加された素材群。
+- ただし、v0時点では入手可能だが用途は一切ない。
+-- コンポスターも不可、入手しても圧縮するしかない。
+
+----
+
+[[前作MirageFairy2023から続投>https://wikiwiki.jp/mifai2023/%E3%83%9F%E3%83%A9%E3%83%BC%E3%82%B8%E3%83%A5%E3%81%AE%E8%8A%B1%E7%B2%89]]。
+- ただし、日本語版の名前が変わっている。
+
+----
+
+v4で「小さな」と原種以外の花粉の内部IDと名称とテクスチャが変更された。
+- そのため、v3→v4アップデートを行う際には花粉を無印の花粉までバラした状態で行うとよい。
+
+----
+
+v15kuからソウルストリームに格納可能になった。
+
+** ランダム召喚 [#ra69be48]
+
+長押しで使用すると妖精のランダム召喚を行う。
+- 押し続けることで大量の妖精を連続召喚できる。
+- 使用中に持っている花粉が枯渇した場合、インベントリ内の同種の花粉を補充してくれる。
+
+スニーク状態で使用すると召喚時の提供割合を表示する。
+
+----
+
+花粉の種類ごとに出現率ボーナスが設定されており、すべての妖精の出現率が増加する。
+- 出現率が100%を超える場合、出現率が多いものから順に出現率が切り詰められ、その分入手時の凝縮数・個数が増加する。
+
+花粉を9倍に圧縮すると出現率がすべて9倍になる。
+- 花粉を圧縮しても効率は変わらず、純粋に試行回数と召喚の手間が削減されるだけである。
+- 希少な妖精を狙う場合でも圧縮すると出現率が増えるため、圧縮しても損はしない。
+
+* 小さなミラージュの花粉（Tiny Pile of Mirage Flour） [#i4c1d4a9]
+
+> ささやかな温もりを、てのひらの上に。
+
+> Compose the body of Mirage fairy
+> ミラージュフェアリーのボディを構成する
+
+出現率ボーナスは0.111。
+
+* ミラージュの花粉（Mirage Flour） [#xc151285]
+
+> 叡智の根源、創発のファンタジア。
+
+> Containing metallic organic matter
+> 金属有機物を含む
+
+出現率ボーナスは1。
+
+* 自然のミラージュの花粉（Mirage Flour of Nature） [#w2d7a657]
+
+> 艶やかなほたる色に煌めく鱗粉。
+
+> Use the difference in ether resistance
+> エーテル耐性の違いを利用する
+
+出現率ボーナスは9。
+
+v3以前は高純度ミラージュの花粉（Rare Mirage Flour）という名称だった。
+
+* 大地のミラージュの花粉（Mirage Flour of Earth） [#b7654e68]
+
+> 黄金の魂が示す、好奇心の輝き。
+
+> As intelligent as humans
+> 人間と同じくらい賢い
+
+出現率ボーナスは81。
+
+v3以前は特選高純度ミラージュの花粉（Very Rare Mirage Flour）という名称だった。
+
+* 地底のミラージュの花粉（Mirage Flour of Underworld） [#f15eedf1]
+
+> 1,300ケルビンの夜景。
+
+> Awaken fairies in the world and below
+> 世界以下の妖精を目覚めさせよう
+
+出現率ボーナスは729。
+
+v3以前は厳選高純度ミラージュの花粉（Ultra Rare Mirage Flour）という名称だった。
+
+* 天空のミラージュの花粉（Mirage Flour of Sky） [#sbcda4a7]
+
+> 蒼淵を彷徨う影、導きの光。
+
+> Explore atmosphere and nearby universe
+> 大気と近くの宇宙を探索する
+
+出現率ボーナスは6561。
+
+v3以前は激甚高純度ミラージュの花粉（Super Rare Mirage Flour）という名称だった。
+
+* 宇宙のミラージュの花粉（Mirage Flour of Universe） [#ge75863b]
+
+> 運命の束、時の結晶、光速の呪いを退けよ、
+> 讃えよ、アーカーシャに眠る自由の頂きを。
+
+> Leap spaces by collapsing time crystals,
+> capture ether beyond observable universe
+> タイムクリスタルの崩壊によって空間を跳躍し、
+> 観測可能な宇宙を超えてエーテルを捕捉する
+
+出現率ボーナスは59049。
+
+v3以前は極超高純度ミラージュの花粉（Extremely Rare Mirage Flour）という名称だった。
+
+* 時空のミラージュの花粉（Mirage Flour of Time） [#cdaf3a00]
+
+> 虚空に眠る時の断片。因果の光が貫くとき、
+> 亡失の世界は探し始める。無慈悲な真実を。
+
+> Attracts nearby parallel worlds outside
+> this universe and collects their ether.
+> この宇宙の外にある近くの平行世界を引き寄せ、
+> それらのエーテルを収集します。
+
+v4で新しく追加された。
+
+出現率ボーナスは531441。

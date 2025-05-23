@@ -1,0 +1,53 @@
+
+* 妖精研究所から新商品登場！（New product from FRI!） [#yc491cb8]
+
+v3で追加されたフェアリークエスト。
+
+----
+
+出現頻度が最も高く、地面に落ちているカードがすべてこれの場合も多い。
+ゲーム開始直後に拾えたら、羊を殴る前に木炭を作ればすぐにベッドを量産出来る。
+
+** クエスト [#i6103013]
+
+フェアリークエストカードは妖精研究所が開発して売っていた商品らしい。
+
+フェアリークエストカードというアイテムの世界観的な説明を与える意味合いが大きいクエスト。
+
+** 取引 [#ge8ab9f2]
+
+石炭もしくは木炭を納品するとベッドがもらえるというもの。
+
+** 全文 [#e290373d]
+
+> 妖精研究所から新商品登場！
+
+> 妖精研究所が誇りを持ってお届けする新商品、“フェアリークエストカード”が待望の新登場！異世界や並行世界との通信や物質転送が可能な画期的な通信端末です！
+> 外出先で急に雷雨が降りだしちゃったなんて経験、一度はありませんか？これさえあれば、急な雷なんて怖くない！
+> 平行世界のストアに接続された“フェアリークエストカード”に代金を投入すれば、あとは商品のデータを受け取るだけで、内蔵の3Dプリンターが、ほら、この通り！
+> 　
+> ※特殊な元素を含む物品の受け取りには、特殊元素用カートリッジ（別売り）が必要となる場合がございます。
+> ※エントロピーの低い物品の受け取りには、反エントロピー用カートリッジ（別売り）が必要となる場合がございます。
+> ※通信先との取引に伴う紛争については、当研究所は一切の責任を負いません。
+> ※ポータルに指等を挟まないようご注意ください。
+> ※お子様の手の届かない場所に保管してください。
+
+> 妖精研究所
+> 創製部
+
+----
+
+> New product from FRI!
+
+> The Institute of Fairy Research proudly presents its latest product, the “Fairy Quest Card”! It's an innovative communication device that allows communication and material transfer with different and parallel worlds!
+> Have you ever been caught in a sudden thunderstorm while out and about? With this, you won't fear unexpected thunderstorms anymore!
+> Simply insert the payment into the “Fairy Quest Card” connected to the stores of parallel worlds, and all you need to do is receive the data for the product. The built-in 3D printer will handle the rest, just like this!
+> 　
+> *For receiving items containing special elements, a separate cartridge for special elements (sold separately) may be required.
+> *For receiving items with low entropy, a separate anti-entropy cartridge (sold separately) may be required.
+> *The institute assumes no responsibility for disputes arising from transactions with communication destinations.
+> *Please be cautious to avoid trapping your fingers in the portal.
+> *Keep out of reach of children.
+
+> The Institute of Fairy Research
+> Creation Department
