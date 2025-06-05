@@ -6,6 +6,11 @@
 > High-friction material
 > 高摩擦材料
 
+> 蜜の味 (進捗)
+
+> The Taste of Nectar (進捗)
+> 蜜の味
+
 v10で追加された素材。
 
 ** 入手 [#ec33babf]

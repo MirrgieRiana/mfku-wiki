@@ -108,9 +108,18 @@ v3以前は激甚高純度ミラージュの花粉（Super Rare Mirage Flour）�
 > タイムクリスタルの崩壊によって空間を跳躍し、
 > 観測可能な宇宙を超えてエーテルを捕捉する
 
+> ゆがむ空間 (進捗)
+
+> Warping Space (進捗)
+> 歪んだ空間
+
 出現率ボーナスは59049。
 
 v3以前は極超高純度ミラージュの花粉（Extremely Rare Mirage Flour）という名称だった。
+
+----
+
+この進捗はMirageFairy2023と同じもの。
 
 * 時空のミラージュの花粉（Mirage Flour of Time） [#cdaf3a00]
 

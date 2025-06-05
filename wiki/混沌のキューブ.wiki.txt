@@ -1,4 +1,9 @@
 
+> 魔導制御プログラム (進捗)
+
+> Magical Control Program (進捗)
+> 魔法制御プログラム
+
 * 混沌のキューブ（Chaos Cube） [#ma4cfae9]
 
 v16kuで追加された敵モブ。

@@ -39,6 +39,11 @@ v16で成長速度が1/5に弱体化された。
 
 * 翠玉輝草エメラルドルミナリア（Emerald Luminaria） [#v94ea85c]
 
+> 金のなる木 (進捗)
+
+> Money Tree (進捗)
+> 金のなる木
+
 v12で追加されたルミナリア科の魔法植物。
 
 エメラルドを実らせる。
@@ -59,11 +64,20 @@ v12で追加されたルミナリア科の魔法植物。
 
 * 金剛石輝草ダイヤモンドルミナリア（Diamond Luminaria） [#d0f49087]
 
+> 炭素も凍る季節 (進捗)
+
+> Even Carbon Freezes (進捗)
+> 炭素さえも凍る
+
 v12で追加されたルミナリア科の魔法植物。
 
 ダイヤモンドを実らせる。
 
 SNOWY系、ICY系、妖精の森に生成される。
+
+----
+
+かつてMirageFairy Serverに[[「炭素も凍る厳冬の妖精」キャンペーン　2022>https://miragefairy-kakera-unofficial.notion.site/MirageFairy2019-v19-0b2035f43eed4505951c1c2677227594]]というイベントがあった。
 
 * ダイヤモンドルミナリアの球根（Diamond Luminaria Bulb） [#xbb4e39d]
 

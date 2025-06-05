@@ -1,5 +1,10 @@
 
-* 鍾乳洞の遺跡（Dripstone Caves Ruin） [#p26e6248]
+* 鍾乳洞の遺跡（Dripstone Cave Ruin） [#p26e6248]
+
+> 古代の未来文明 (進捗)
+
+> The Ancient Future Civ (進捗)
+> 古代未来文明
 
 v16kuで追加された地下ダンジョン。
 

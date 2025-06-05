@@ -1,6 +1,11 @@
 
 * 妖花ミラージュ（Mirage Flower） [#u4fbadf6]
 
+> 植物の支配する世界 (進捗)
+
+> A World Ruled by Plants (進捗)
+> 植物に支配された世界
+
 v0で追加されたミラージュ科の魔法植物。
 
 MirageFairyのMODシリーズにおいて、プレイヤーがMODに触れる最初の機会として使われてきた象徴的な植物。
@@ -17,6 +22,10 @@ MirageFairyのMODシリーズにおいて、プレイヤーがMODに触れる最
 - MirageFairyシリーズにおいて、Mirageは漢字で「妖」と訳される。
 - Mirage flowerを漢字にすると妖花となる。
 - fairyは「精」なので、Mirage fairy＝妖精となる。
+
+----
+
+上位版に幻花ファントムがある。
 
 ** 収穫物 [#a22c91ef]
 

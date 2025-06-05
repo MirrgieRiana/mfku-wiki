@@ -6,6 +6,11 @@
 > The scent of Haimeviska feel nostalgic
 > ハイメヴィスカの香りはノスタルジックに感じます
 
+> ハイメヴィスカの香り (進捗)
+
+> The Scent of Haimeviska (進捗)
+> ハイメヴィスカの香り
+
 v15kuで追加された、ドリンクの製造に使われるTier2のユーティリティブロック。
 
 ** 入手 [#c1af5876]
