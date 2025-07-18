@@ -28,13 +28,9 @@ v12で追加されたミラージュ科の魔法植物。
 
 この植物を育てるには、先にミラージュの方を品種改良し、交雑で高い成長速度や種子生成能力を輸入するのがよい。
 
-* ファントムの球根（Phantom Bulb） [#f8e6fd6c]
+** 幻花ファントムの球根（Phantom Bulb） [#f8e6fd6c]
 
 > ——おいでよ、僕たちのところへ
 
 > Illusory telepathy
 > 錯覚テレパシー
-
-> 妖花目ミラージュ科
-
-> Order Miragales, family Miragaceae

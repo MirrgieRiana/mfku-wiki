@@ -8,6 +8,8 @@
 
 v3で追加された装飾ブロック。
 
+v20kuで斧でも破壊可能になった。
+
 ----
 
 ポエムは、[[初出作品でのアップデート記事の文章から>https://miragefairy.notion.site/MirageFairy2019-v27-f8b876c83cf24ccc9bae80a19f12429a#e8f84d0d7e5d40ba95f2651b673771a1]]。

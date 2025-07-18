@@ -22,4 +22,8 @@ v14で追加されたツールカテゴリ。
 
 ----
 
-初出は[[MirageFairy2023の蒼天石のナイフ>https://wikiwiki.jp/mifai2023/%E8%92%BC%E5%A4%A9%E3%81%AE%E3%83%8A%E3%82%A4%E3%83%95]]。
+v19.2kuからすべてのナイフに粘着採掘が付いた。
+
+----
+
+初出は[[MirageFairy2023の蒼天のナイフ>https://wikiwiki.jp/mifai2023/%E8%92%BC%E5%A4%A9%E3%81%AE%E3%83%8A%E3%82%A4%E3%83%95]]。

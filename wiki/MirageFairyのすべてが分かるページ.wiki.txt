@@ -25,6 +25,14 @@ MirageFairyプロジェクトのKU派生の公式サイトです。
 
 MirageFairy本家の公式サイトは2025年2月1日現在確認されていません。
 
+----
+
+これは上記公式サイトのミラーです。
+
+情報は必ずしも最新とは限りませんが、JavaScriptを使用しておらず、AIを含むツールがアクセスできます。
+
+> https://mirrgieriana.github.io/MFKU-Official-Web-Site-Mirror/
+
 ** Modrinth（MOD配布ページ） [#bb731359]
 
 > https://modrinth.com/mod/miragefairy2024-kakera-unofficial
@@ -50,18 +58,30 @@ MirageFairy-Kakera-UnofficialのDiscordです。
 本Wikiです。
 非公式であり、誰でも編集できますが、ほとんどの部分はMOD作者によって書かれています。
 
+----
+
+本Wikiのテキストデータが1個にまとまったファイルです。
+
+常に最新とは限りませんが、1個のファイルとしてAIツールが利用できます。
+
+> https://mirrgieriana.github.io/mfku-wiki/wiki-dump_out.txt
+
+これはそのリポジトリです。
+
+> https://github.com/MirrgieRiana/mfku-wiki
+
 ** GitHub [#u989ed27]
 
 > https://github.com/MirrgieRiana/MirageFairy2024-Kakera-Unofficial
 
 MF24KUのソースコードを公開している場所です。
 
-----
+** MF24KU Lang Table [#r33f8753]
 
 ゲーム内の翻訳ファイルをWeb上で公開しているページがあります。
 これは世界観考察などにおいて、非常に参考になります。
 
-https://mirrgieriana.github.io/MirageFairy2024-Kakera-Unofficial/lang_table.html
+> https://mirrgieriana.github.io/MirageFairy2024-Kakera-Unofficial/lang_table.html
 
 * MirageFairy2024 [#uec3ca7f]
 

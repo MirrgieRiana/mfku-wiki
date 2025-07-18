@@ -1,4 +1,14 @@
 
+* ミラージュ科 [#y158f020]
+
+> 妖花目ミラージュ科
+
+> Order Miragales, family Miragaceae
+
+v0から存在する魔法植物の科。
+
+ミラージュやファントムが含まれる。
+
 * 妖花ミラージュ（Mirage Flower） [#u4fbadf6]
 
 > 植物の支配する世界 (進捗)
@@ -38,16 +48,12 @@ MirageFairyのMODシリーズにおいて、プレイヤーがMODに触れる最
 
 希少品生成：フェアリークリスタル
 
-* ミラージュの球根（Mirage Bulb） [#xd314075]
+** 妖花ミラージュの球根（Mirage Bulb） [#xd314075]
 
 > 可憐にして人畜無害たる魔物。
 
 > Evolution to escape extermination
 > 絶滅を逃れるための進化
-
-> 妖花目ミラージュ科
-
-> Order Miragales, family Miragaceae
 
 v0で追加された妖花ミラージュの球根。
 

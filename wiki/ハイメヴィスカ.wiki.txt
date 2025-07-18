@@ -1,4 +1,6 @@
 
+#contents
+
 * ハイメヴィスカ（Haimeviska） [#f48f0559]
 
 > 植物として生きるとはどのようなことか (進捗)
@@ -121,6 +123,33 @@ v18kuから、木の棒や苗木のドロップ率がそれまでの1/4に減少
 - 自然に生えているハイメヴィスカの原木と異なり、妖精の原木は普通の木をミラージュオイルに浸して作る加工品である。
 - しかし、妖精の家に使われる点は同じである。
 
+* ハイメヴィスカの木（Haimeviska Wood） [#h08c5859]
+
+> ウィスプたちの集合知。
+
+> Hydraulic communication system
+> 油圧通信システム
+
+v20kuで追加された建材ブロック。
+
+* 樹皮を剥いだハイメヴィスカの原木（Stripped Haimeviska Log） [#ya3e4e75]
+
+> ぬぐわれたペルソナ。
+
+> Something lacking the essence
+> 本質を欠いたもの
+
+v20kuで追加された建材ブロック。
+
+* 樹皮を剥いだハイメヴィスカの木（Stripped Haimeviska Wood） [#rf7f593a]
+
+> 寄生蔦からの解放。
+
+> Loss of self
+> 自己喪失
+
+v20kuで追加された建材ブロック。
+
 * 傷の付いたハイメヴィスカの原木（Incised Haimeviska Log） [#i27862ef]
 
 > 動物を守るということ
@@ -166,6 +195,117 @@ v18kuから、木の棒や苗木のドロップ率がそれまでの1/4に減少
 
 > Flexible and friendly, good for interior
 > フレキシブルでフレンドリー、インテリアにも最適
+
+v20kuでテクスチャが変更された。
+- 旧テクスチャは、ハイメヴィスカレンガへと受け継がれた。
+
+* ハイメヴィスカの板材（Haimeviska Planks） [#ac85443c]
+
+> 考える、壁。
+
+> Flexible and friendly, good for interior
+> 柔軟で親しみやすく、インテリアにも最適
+
+* ハイメヴィスカのハーフブロック（Haimeviska Slab） [#v04c7552]
+
+> 半人前の側頭葉。
+
+> Searching for another personality.
+> 別の人格を求めて。
+
+v20kuで追加された建材ブロック。
+
+* ハイメヴィスカの階段（Haimeviska Stairs） [#o110f555]
+
+> 情緒体を喰らう頂となれ。
+
+> Step that pierces the sky
+> 空を貫く一歩
+
+v20kuで追加された建材ブロック。
+
+* ハイメヴィスカのフェンス（Haimeviska Fence） [#l8be9579]
+
+> 樹のなかに住む。
+
+> Personality flowing through the xylem
+> 木質部を流れる人格
+
+v20kuで追加された建材ブロック。
+
+* ハイメヴィスカのフェンスゲート（Haimeviska Fence Gate） [#zb7f6105]
+
+> 知性の邂逅。
+
+> It chose this path of its own will
+> 自らの意志でこの道を選んだ
+
+v20kuで追加された建材ブロック。
+
+* ハイメヴィスカのボタン（Haimeviska Button） [#y15ec9c6]
+
+> 指先の感触。
+
+> What is this soft and warm thing?
+> この柔らかく温かいものは何だろう？
+
+v20kuで追加された建材ブロック。
+
+* ハイメヴィスカの感圧板（Haimeviska Pressure Plate） [#n1102e80]
+
+> 反応と感覚の違い。
+
+> Creature with the name of a machine
+> 機械という名を持つ生き物
+
+v20kuで追加された建材ブロック。
+
+* ハイメヴィスカのドア（Haimeviska Door） [#o5204453]
+
+> 遺伝子の水平伝播。
+
+> Astral read-only vortex
+> アストラル読み取り専用渦
+
+v20kuで追加された建材ブロック。
+
+* ハイメヴィスカのトラップドア（Haimeviska Trapdoor） [#qd9f9e79]
+
+> 自己認識の防衛線。
+
+> Intermingling astral vortices
+> 混ざり合うアストラル渦
+
+v20kuで追加された建材ブロック。
+
+* ハイメヴィスカレンガ（Haimeviska Bricks） [#v505f1d1]
+
+> 人がもたらした原生林。
+
+> An ecosystem called 'civilization'
+> 「文明」という名のエコシステム
+
+v20kuで追加された建材ブロック。
+
+v19ku以前このテクスチャが板材のテクスチャであった。
+
+* ハイメヴィスカレンガのハーフブロック（Haimeviska Bricks Slab） [#t9c71523]
+
+> ひとまわり細かくなった私。
+
+> Extremely modularized memory
+> 極限までモジュール化された記憶
+
+v20kuで追加された建材ブロック。
+
+* ハイメヴィスカレンガの階段（Haimeviska Bricks Stairs） [#n2fa85e8]
+
+> 生体工学の歩み。
+
+> Forgotten paths of the technology
+> 忘れ去られたテクノロジーの道
+
+v20kuで追加された建材ブロック。
 
 * ハイメヴィスカの苗木（Haimeviska Sapling） [#x9723e45]
 
