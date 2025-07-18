@@ -61,12 +61,18 @@ fun Sequence<Pair<TarArchiveEntry, TarArchiveInputStream>>.visitPages(callback: 
 
 fun dumpAllToSingleText(srcZipFile: File, outFile: File) {
     outFile.printWriter().use { writer ->
+        val contents = mutableMapOf<String, List<String>>()
         srcZipFile.getZipEntries().visitPages { name, body ->
-            writer.println("##########################################")
-            writer.println("##  Page: $name")
-            writer.println("##########################################")
-            writer.println("")
-            writer.println(body)
+            contents[name] = listOf(
+                "##########################################",
+                "##  Page: $name",
+                "##########################################",
+                "",
+                body,
+            )
+        }
+        contents.entries.sortedBy { it.key }.map { it.value }.flatten().forEach {
+            writer.print("$it\n")
         }
     }
 }
