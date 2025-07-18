@@ -2,3 +2,7 @@
 *.gitattributes  text eol=lf
 *.md             text eol=lf
 *.txt            text eol=lf
+*.bat            text eol=crlf
+*.kts            text eol=lf
+gradlew          text eol=lf
+*.gitignore      text eol=lf
