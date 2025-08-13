@@ -96,7 +96,10 @@ val srcZipFile = File("3e81b3ca-7be8-4d5c-9ddd-d2e34a683adf.tar.gz")
 val outFile = File("wiki-dump_out.txt")
 val outDir = File("wiki")
 
+tasks.register("build")
+
 tasks.register("dump")
+tasks.named("build") { dependsOn(tasks.named("dump")) }
 
 tasks.register("dumpText") {
     doLast {
