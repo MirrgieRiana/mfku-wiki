@@ -92,7 +92,7 @@ fun dumpPagesToDirectory(srcZipFile: File, outDir: File) {
 }
 
 
-val srcZipFile = File("f678e6b7-fd1e-49bb-a3ec-8526fa465ee0.tar.gz")
+val srcZipFile = File("3e81b3ca-7be8-4d5c-9ddd-d2e34a683adf.tar.gz")
 val outFile = File("wiki-dump_out.txt")
 val outDir = File("wiki")
 

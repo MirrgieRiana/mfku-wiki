@@ -26,12 +26,16 @@ v16kuでツールが追加された。
 - 範囲採掘が邪魔になるような場合はこちらを使うのもアリ。
 - 向こうが効率強化6が出ることを加味すると、実は採掘速度は負けている。
 
-* 残響のつるはし（Echo Pickaxe） [#x0db9d2e]
+----
 
-* 残響の斧（Echo Axe） [#y2d4f4d4]
+v21kuで英語版のツールの名称が「Echo 〜」から「Echo Shard 〜」に変わった。
 
-* 残響のシャベル（Echo Shovel） [#ka75a9d4]
+* 残響のつるはし（Echo Shard Pickaxe） [#x0db9d2e]
 
-* 残響のクワ（Echo Hoe） [#gc44761e]
+* 残響の斧（Echo Shard Axe） [#y2d4f4d4]
 
-* 残響の剣（Echo Sword） [#hcbd3683]
+* 残響のシャベル（Echo Shard Shovel） [#ka75a9d4]
+
+* 残響のクワ（Echo Shard Hoe） [#gc44761e]
+
+* 残響の剣（Echo Shard Sword） [#hcbd3683]

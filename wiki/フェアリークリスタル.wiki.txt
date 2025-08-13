@@ -108,6 +108,37 @@ v10以前のポエムは次のものであった。
 
 > 闇を打ち砕く透明な心。
 
+
+
+* フェアリークリスタルの斧（Fairy Crystal Axe） [#f452edd0]
+
+> 年輪が語る、自然の姿。
+
+> A tree that raised many fairies
+> 多くの妖精を育てた木
+
+v21kuで追加された。
+
+* フェアリークリスタルのシャベル（Fairy Crystal Shovel） [#e9133a68]
+
+> いつか妖精になるものたち。
+
+> Spiritual cycle of carbon
+> 炭素の精神的な循環
+
+v21kuで追加された。
+
+* フェアリークリスタルのクワ（Fairy Crystal Hoe） [#eb83fee2]
+
+> ソウルストリームに宿る、生命の息吹。
+
+> Essence of life within the soul stream
+> 魂の流れの中の生命のエッセンス
+
+v21kuで追加された。
+
+v21ku現在、ソウルストリームに格納可能なクワはミラジディアンとこれのみ。
+
 * フェアリークリスタルの剣（Fairy Crystal Sword） [#s9ba6a71]
 
 > 妖精はこれをおやつにするという

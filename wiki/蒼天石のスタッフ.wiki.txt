@@ -40,6 +40,11 @@ v13で追加されたTier2のスタッフ。
 > Risk of vacuum decay due to anti-entropy
 > 抗エントロピーによる真空減衰のリスク
 
+> 盲目のドグマ (進捗)
+
+> Innocent Dogma (進捗)
+> イノセントドグマ
+
 v13で追加されたTier3のスタッフ。
 
 蒼天石のスタッフの強化版だが、旧作ではこちらの方が先に登場。
