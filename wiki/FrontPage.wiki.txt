@@ -1,19 +1,33 @@
-TITLE:MFKU非公式Wiki
+TITLE:IFRKU非公式Wiki
 
-#ref(MF24KU_GitHub-Repository_2.png,center)
+#ref(IFR25KU_GitHub-Repository_640x320.png,center)
 
 * ガイド [#s998cf8b]
 
 見たい項目をメニューから選択してください。
 
-* 取り扱い対象のMFKUへの移行について [#s94900b2]
+* 取り扱い対象のIFRKUへの移行について [#l0fa14ff]
 
-MF24KU（旧称MirageFairy2024-Kakera-Unofficial）は、2024年11月頃に、MirageFairy2024（本家）のv14から派生したMODです。
-v13以前は本家しかなく、v14は同等のものが両方に存在し、v15以降は2025年2月1日現在KU側にだけ存在します。
+本Wikiは、MirageFairy2024を取りまく環境に合わせて2度取り扱い対象を変更しています。
 
-当Wikiでは主要な編集者が主にKUの方で活動しているため、MF24KU v15以降は本家ではなくMF24KUの方を主に取り扱います。
+- 2024年11月頃にMirageFairy2024（本家MirageFairy所属）からMF24KU（Kakera-Unofficial所属）に移行しました。
+- 2025年8月頃にMF24KU（Kakera-Unofficial所属）からIFR25KU（Kakera-Unofficial所属）に移行しました。
 
-また、MF24KU派生以前の本家作品も含む、MFKUの世界観全般も扱います。
+当Wikiでは主要な編集者が主にIFRKUの方で活動しているため、これに追従しています。
+
+また、派生以前の本家作品も含む、MirageFairyやMFKUの世界観全般も扱います。
+
+----
+
+バージョンごとの派生作品の対応表
+
+|CENTER:|CENTER:|CENTER:|CENTER:|CENTER:||c
+|短縮表記|バージョン|MirageFairy2024|MF24KU|IFR25KU|備考|h
+|〜v13|〜0.13.0|○||||
+|v14|0.14.0|○||||
+|v14〜|0.14.2〜||○||0.14.0とほぼ同内容|
+|〜v22|〜22.22.0||○|||
+|v23〜|23.23.0〜|||○|v22とほぼ同内容|
 
 * ライセンス表示 [#mc3789ff]
 
@@ -23,7 +37,7 @@ v13以前は本家しかなく、v14は同等のものが両方に存在し、v1
 
 当Wikiのライセンスは、従来『クリエイティブ・コモンズ 表示-継承4.0国際ライセンス』としておりましたが、2025年2月1日以降、『クリエイティブ・コモンズ 表示4.0国際ライセンス』へと変更されました。
 
-** 派生元作品表示 [#q151a5ce]
+** 原作表示 [#q151a5ce]
 
 『MirageFairy』
 https://miragefairy.notion.site/
@@ -39,6 +53,12 @@ https://github.com/MirageFairy/MirageFairy2024
 『MF24KU』
 by 夜のかけら
 https://github.com/MirrgieRiana/MirageFairy2024-Kakera-Unofficial
+
+----
+
+『IFR25KU』
+by 夜のかけら
+https://github.com/MirrgieRiana/IFR25KU
 
 //TITLE:FrontPage（お好きなタイトルに変更して下さい）
 //凍結を解除してください。

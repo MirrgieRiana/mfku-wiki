@@ -1,29 +1,18 @@
 [[トップ>https://wikiwiki.jp/mifai2024/]] [[メニュー>MenuBar]]
 * MirageFairy [#u406e334]
-[[MirageFairyのすべてが分かるページ]]
-** [[MF24KU]] [#c3e9c25f]
-[[MF24KU]]
-[[MF24KU Test Server]]
+[[''&color(blue){MirageFairyのすべてが分かるページ};''>MirageFairyのすべてが分かるページ]]
+''配布ページ''、各種リンクなどもこちら
+** 作品 [#o6e93bd1]
+[[IFR25KU]]&color(blue){（最新）};
+[[IFR25KU Server]]&color(blue){（最新）};
+[[MF24KU]]&color(red){（終了）};
+[[MF24KU Test Server]]&color(red){（終了）};
+[[MirageFairy2024]]&color(red){（終了）};
+[[MirageFairy2024サーバー>テストプレイサーバー]]&color(red){（終了）};
+[[MirageFairy2023]]&color(red){（終了）};　[[Wiki>https://wikiwiki.jp/mifai2023/]]
+[[MirageFairy2019]]&color(red){（終了）};　[[Wiki>https://w.atwiki.jp/miragefairy2019/]]
 ----
-[[公式サイト（外部リンク）>https://miragefairy-kakera-unofficial.notion.site/]]
-[[配布サイト（Modrinth）（外部リンク）>https://modrinth.com/mod/miragefairy2024-kakera-unofficial]]
-[[Discord（外部リンク）>https://discord.gg/qSWsnZttB8]]
-[[GitHub（外部リンク）>https://github.com/MirrgieRiana/MirageFairy2024-Kakera-Unofficial]]
-[[更新履歴（外部リンク）>https://github.com/MirrgieRiana/MirageFairy2024-Kakera-Unofficial/blob/main/CHANGELOG.md]]
-** [[MirageFairy2024]] [#d844b73e]
-[[MirageFairy2024]]
-----
-//%%[[公式サイト（外部リンク）>https://miragefairy.notion.site/]]%%
-[[配布サイト（Modrinth）（外部リンク）>https://modrinth.com/mod/miragefairy2024]]
-//%%[[Discord（外部リンク）>https://discord.gg/9Gre3MHGvD]]%%
-[[GitHub（外部リンク）>https://github.com/MirageFairy/MirageFairy2024]]
-[[更新履歴（外部リンク）>https://github.com/MirageFairy/MirageFairy2024/blob/main/CHANGELOG.md]]
-----
-//[[テストプレイサーバー]]
 [[バージョン]]
-** 旧作 [#a8b10982]
-[[MirageFairy2019]]　[[Wiki>https://w.atwiki.jp/miragefairy2019/]]
-[[MirageFairy2023]]　[[Wiki>https://wikiwiki.jp/mifai2023/]]
 * 妖精 [#c7d83a0e]
 [[妖精]]
 ┣[[妖精の一覧]]
@@ -65,6 +54,7 @@
 * 魔法植物・樹木 [#n3362a09]
 [[魔法植物]]
 ┣[[魔法植物データ]]
+┣[[突然変異]]
 ┣[[球根]]
 ┣[[特性]]
 ┗[[特性GUI]]
@@ -96,6 +86,7 @@
 ┣★黄玉輝草トパーズ[[ルミナリア]]
 ┣★紅天輝草[[シャルピエ・ルミナーラ]]
 ┣┗■[[理天石]]
+┃　┗■[[ノイズ]]
 ┣■[[ルミナイト]]
 ┃┗■[[共鳴石]]
 ┗★紅炎草[[プロミナリア]]
@@ -126,7 +117,7 @@
 [[一括採掘効果]]
 [[一括伐採効果]]
 [[範囲採掘効果]]
-[[自己修繕効果]]
+[[耐久値自然回復効果]]
 [[シルクタッチ]]
 [[妖精獲得効果]]
 [[収集効果]]
@@ -180,6 +171,8 @@
 [[設置されたアイテム]]
 [[進捗]]
 [[ソウルストリーム]]
+[[絵文字]]
+[[ツールチップビューワー]]
 ----
 [[Tier]]
 [[ポエム]]
