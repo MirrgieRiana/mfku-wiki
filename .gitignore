@@ -1,4 +1,5 @@
 /.idea
-/.gradle
-/build
+.gradle
+build
 /*.tar.gz
+*.review.html
