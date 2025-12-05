@@ -19,7 +19,11 @@ MirageFairy Serverの[[メンバー募集ページ>https://miragefairy-server.no
 
 * 環境 [#o8644269]
 
-妖精や「奇形生物」（＝Minecraftの敵モブ）が自然発生する異常地帯。
+妖精や「奇形生物」が自然発生する異常地帯。
+- 奇形生物とはMinecraftの敵モブのことで、それが自然発生するというのは普通のマイクラの世界である。
+-- 初めてやって来た人類にとってはこの点を以っても十分異常地帯だが。
+
+----
 
 [[MirageFairy2019の妖精変成レシピ>https://w.atwiki.jp/miragefairy2019/pages/136.html]]では、次のように述べられている。
 

@@ -8,7 +8,12 @@
 
 * IFR25KU: The Institute of Fairy Research 2025 Kakera Unofficial [#v958a031]
 
-2025年8月に夜のかけら氏によってMF24KUからフォークされたMFKUシリーズの派生MODです。
+2025年8月に夜のかけら氏によってMF24KUからフォークされた派生MODです。
+
+創作プロジェクトそのものとしてはIFRKUと呼ばれ、これはおそらくThe Institute of Fairy Research Kakera Unofficialの略です。
+IFRKUプロジェクトはMFKUプロジェクトからの派生です。
+世界観そのものを表すときは、IFR（The Institute of Fairy Research）と呼ばれることもあります。
+そのほかKU（Kakera Unofficial）と呼ばれることもあり、これはMirageFairy公式でない夜のかけらの派生全体を表します。
 
 |所属|リンク|説明|h
 |IFRKU公式|[[公式Webサイト>https://kakera-unofficial.notion.site]]|MFKUおよびIFRKUの公式Webサイトです。&br;旧作MODのほか、MFAと呼ばれる世界観資料も掲載されています。&br;MirageFairy本家の公式サイトは2025年2月1日現在確認されていません。|
@@ -18,6 +23,7 @@
 |IFRKU公式|[[GitHub>https://github.com/MirrgieRiana/IFR25KU]]|IFR25KUのソースコードを公開している場所です。&br;バグ報告もこちらからできます。|
 |IFRKU公式|[[CHANGELOG>https://mirrgieriana.github.io/IFR25KU/CHANGELOG.html]]|公式による唯一の網羅的なドキュメントである、MODの更新履歴です。|
 |IFRKU公式|[[IFR25KU Lang Table>https://mirrgieriana.github.io/IFR25KU/lang_table.html]]|ゲーム内の翻訳ファイルをWeb上で公開しているページがあります。&br;これは世界観考察などにおいて非常に役に立ちます。&br;また、MirageFairyプロジェクトでは英語版と日本語版でかけ離れた名称を持つ&br;事物が非常にありふれているため、これをLLMに持っていくといいです。|
+|非公式|[[IFRKU非公式Wiki>https://wikiwiki.jp/mifai2024/]]|本Wikiです。&br;非公式であり、誰でも編集できますが、ほとんどの部分はMOD作者によって書かれています。|
 
 ** IFR25KU Server [#ze207174]
 
@@ -107,3 +113,9 @@ MirageFairyの世界観はすべてのMODおよび、MODでない作品の間で
 
 |所属|リンク|説明|h
 |非公式|[[MirageFairy2019　非公式Wiki>https://w.atwiki.jp/miragefairy2019/]]|旧作のWikiです。|
+
+* 世界観の考察 [#g587c560]
+
+MirageFairy・MFKU・IFRKUには、重厚で詳細な世界観設定が練り込まれています。
+
+世界観の理解を深めるための資料の詳細は、世界観のページで取り扱っています。

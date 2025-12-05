@@ -3,7 +3,7 @@ plugins {
     id("build-logic")
 }
 
-val srcZipFileName = "4aa2d80d-6d2b-48e0-b0aa-a507c4643eb5.tar.gz"
+val srcZipFileName = "d3e9ff84-dce7-4b4a-a71c-dedc68b508dd.tar.gz"
 
 // Wiki Dump を展開
 val unpackWikiDump = tasks.register<Sync>("unpackWikiDump") {

@@ -1,0 +1,100 @@
+
+* 守護の耐霊石（Protective Aura-Resistant Ceramic） [#v9362df4]
+
+> 恒久の栄華を讃える紅天市街——
+
+> The eternally glorious city of Xarperia
+> 永遠の栄光の都市ザルペリア
+
+v30kuで追加されたTier2の建材ブロック。
+- 多くの模様と形状のバリエーションがあり、バリエーションごとに個別のポエムが設定されている。
+
+----
+
+主に過去を見つめる都市の建物や床として生成され、プレイヤーも砂岩と紅天石から作ることができる。
+
+----
+
+Xarperiaの発音やカタカナ表記は今のところ不明。
+- Xarpa→シャルパの対応から、今のところシャルペリアの可能性が高い。
+
+* 守護の耐霊石のハーフブロック（Protective Aura-Resistant Ceramic Slab） [#o8fd9e0f]
+
+> 光素力学と万物の理論の統合——
+
+> The unified meta-/retro-physics theory
+> 統一されたメタ/レトロ物理学理論
+
+* 守護の耐霊石の階段（Protective Aura-Resistant Ceramic Stairs） [#t1b8de9d]
+
+> アカーシャに続く路——
+
+> The final creative research of humanity
+> 人類最後の創造的研究
+
+* 守護の耐霊石の丸石（Cobbled Protective Aura-Resistant Ceramic） [#j4e9670f]
+
+> 砂岩に宿るポリテルペンの祝福——
+
+> Penetrates the monomer and solidifies
+> モノマーに浸透して固化します
+
+* 滑らかな守護の耐霊石（Smooth Protective Aura-Resistant Ceramic） [#p896ebbe]
+
+> 空隙に走る樹脂の流れ——
+
+> Turpentine improves its flowability
+> テレピンは流動性を改善します
+
+* 磨かれた守護の耐霊石（Polished Protective Aura-Resistant Ceramic） [#t00abe3c]
+
+> 情緒線の被曝に備えて——
+
+> Economical urban astral shielding
+> 経済的な都市アストラルシールド
+
+* 守護の耐霊石レンガ（Protective Aura-Resistant Ceramic Bricks） [#f245e9ae]
+
+> 常に純潔な魂であれ——
+
+> Protects lifeforms from radiation
+> 放射線から生命体を守る
+
+* 守護の耐霊石レンガのハーフブロック（Protective Aura-Resistant Ceramic Brick Slab） [#x638726d]
+
+> 魔物と混淆しないために——
+
+> Transmutation caused by solar flares
+> 太陽フレアによる核変換
+
+* 守護の耐霊石レンガの階段（Protective Aura-Resistant Ceramic Brick Stairs） [#t93c7e4f]
+
+> 暮らしを守る紅い盾——
+
+> The scarlet roofs that protect citizens
+> 民を守る緋色の屋根
+
+* ひび割れた守護の耐霊石レンガ（Cracked Protective Aura-Resistant Ceramic Bricks） [#b72c4a4a]
+
+> 損傷した遺伝子の断片——
+
+> Exposed and degraded fairy blood
+> 露出して劣化した妖精の血
+
+* 守護の耐霊石タイル（Protective Aura-Resistant Ceramic Tiles） [#kaa54051]
+
+> 生存の願いを敷石に込めて——
+
+> Weather-resistance due to magnetite
+> マグネタイトによる耐候性
+
+* 模様入りの守護の耐霊石（Chiseled Protective Aura-Resistant Ceramic） [#wbe3d6b2]
+
+> 瞳の中のサティアン。
+
+> The Truth-Gazer.
+> 真実を見つめる者。
+
+側面に目の模様が掘られている。
+上下には何もなく、滑らかなテクスチャが使われている。
+原木のように横向きに設置できる。
