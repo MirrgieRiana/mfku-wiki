@@ -1,6 +1,14 @@
+import com.google.gson.GsonBuilder
+
 plugins {
     java
     id("build-logic")
+}
+
+buildscript {
+    dependencies {
+        classpath("com.google.code.gson:gson:2.11.0")
+    }
 }
 
 val srcZipFileName = "d3e9ff84-dce7-4b4a-a71c-dedc68b508dd.tar.gz"
@@ -42,6 +50,28 @@ val generateDumpText = tasks.register("generateDumpText") {
     }
 }
 tasks.named("assemble").configure { dependsOn(generateDumpText) }
+
+// jsonに出力
+val generateDumpJson = tasks.register("generateDumpJson") {
+    group = "build"
+    inputs.files(unpackWikiDump)
+    val destinationFile = layout.projectDirectory.file("all.wiki.json")
+    outputs.file(destinationFile)
+    doLast {
+        destinationFile.asFile.parentFile?.mkdirs()
+        destinationFile.asFile.printWriter().use { writer ->
+            val data = unpackWikiDump.get().outputs.files.asFileTree
+                .sortedBy { it.path }
+                .asSequence()
+                .readAsWikiPages(this@register)
+                .associate { (title, body) -> title to body }
+            val json = GsonBuilder().setPrettyPrinting().create().toJson(data)
+            writer.println(json)
+        }
+        logger.lifecycle("Written: ${destinationFile.asFile.absolutePath}")
+    }
+}
+tasks.named("assemble").configure { dependsOn(generateDumpJson) }
 
 // 一旦フォーマットを整形する
 val dumpWikiDirectory = tasks.register("dumpWikiDirectory") {
