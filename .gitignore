@@ -1,4 +1,4 @@
-/.idea
-.gradle
-build
-*.review.html
+/.idea/
+.gradle/
+build/
+/ai/
