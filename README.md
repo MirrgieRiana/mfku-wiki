@@ -7,10 +7,8 @@
 
 ## リンク
 
-### URL
-
-- GitHub https://github.com/MirrgieRiana/mfku-wiki
-- 公開ページ https://mirrgieriana.github.io/mfku-wiki/
+- [GitHubリポジトリ](https://github.com/MirrgieRiana/mfku-wiki)
+- [公開ページ](https://mirrgieriana.github.io/mfku-wiki/)
 
 ### 各種ファイル
 
