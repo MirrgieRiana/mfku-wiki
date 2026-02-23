@@ -22,7 +22,7 @@ IFRKUプロジェクトはMFKUプロジェクトからの派生です。
 |IFRKU公式|[[Discord>https://discord.gg/bppQyAZtkA]]|IFRKU Discordの招待リンクです。|
 |IFRKU公式|[[GitHub>https://github.com/MirrgieRiana/IFR25KU]]|IFR25KUのソースコードを公開している場所です。&br;バグ報告もこちらからできます。|
 |IFRKU公式|[[CHANGELOG>https://mirrgieriana.github.io/IFR25KU/CHANGELOG.html]]|公式による唯一の網羅的なドキュメントである、MODの更新履歴です。|
-|IFRKU公式|[[IFR25KU Lang Table>https://mirrgieriana.github.io/IFR25KU/lang_table.html]]|ゲーム内の翻訳ファイルをWeb上で公開しているページがあります。&br;これは世界観考察などにおいて非常に役に立ちます。&br;また、MirageFairyプロジェクトでは英語版と日本語版でかけ離れた名称を持つ&br;事物が非常にありふれているため、これをLLMに持っていくといいです。|
+|IFRKU公式|[[IFR25KU Lang Table>https://mirrgieriana.github.io/IFR25KU/lang_table.html]]&br;[[IFR25KU Lang Table (JSON)>https://mirrgieriana.github.io/IFR25KU/lang_table.json]]&br;[[IFR25KU Lang Table (CSV)>https://mirrgieriana.github.io/IFR25KU/lang_table.csv]]|ゲーム内の翻訳ファイルをWeb上で公開しているページがあります。&br;これは世界観考察などにおいて非常に役に立ちます。&br;また、MirageFairyプロジェクトでは英語版と日本語版でかけ離れた名称を持つ&br;事物が非常にありふれているため、これをLLMに持っていくといいです。|
 |非公式|[[IFRKU非公式Wiki>https://wikiwiki.jp/mifai2024/]]|本Wikiです。&br;非公式であり、誰でも編集できますが、ほとんどの部分はMOD作者によって書かれています。|
 
 ** IFR25KU Server [#ze207174]
@@ -73,7 +73,7 @@ MF24KUの公式テストサーバーです。
 公式GitHubには以下の英語の説明があります。
 
 > The Minecraft MOD for the MirageFairy project in 2024.
-> （訳：2024年のMirageFairyプロジェクトのMinecraft MOD）
+> （2024年のMirageFairyプロジェクトのMinecraft MOD）
 
 MirageFairyという創作プロジェクトがあり、MirageFairy2024はそのマイクラMODです。
 

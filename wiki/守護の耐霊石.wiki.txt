@@ -4,7 +4,7 @@
 > 恒久の栄華を讃える紅天市街——
 
 > The eternally glorious city of Xarperia
-> 永遠の栄光の都市ザルペリア
+> 永遠の栄光に輝く都市シャルペリア
 
 v30kuで追加されたTier2の建材ブロック。
 - 多くの模様と形状のバリエーションがあり、バリエーションごとに個別のポエムが設定されている。
@@ -65,7 +65,7 @@ Xarperiaの発音やカタカナ表記は今のところ不明。
 > 魔物と混淆しないために——
 
 > Transmutation caused by solar flares
-> 太陽フレアによる核変換
+> 太陽フレアによって引き起こされる変成
 
 * 守護の耐霊石レンガの階段（Protective Aura-Resistant Ceramic Brick Stairs） [#t93c7e4f]
 

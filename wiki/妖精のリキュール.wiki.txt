@@ -4,7 +4,7 @@
 > 妖精はハイになり、人間は火傷する。
 
 > Fairies get high, humans get burned
-> 妖精は高くなり、人間は燃えます
+> 妖精は酔い、人間は焼かれる
 
 v15kuで追加されたTier2のドリンク。
 
