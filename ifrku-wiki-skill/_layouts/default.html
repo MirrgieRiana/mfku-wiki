@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'ja' }}">
+<head>
+<meta charset="UTF-8">
+<title>{{ page.title }}</title>
+<style>
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Meiryo', sans-serif;
+    max-width: 960px;
+    margin: 2em auto;
+    padding: 0 1.5em;
+    line-height: 1.8;
+    color: #222;
+    background: #fff;
+  }
+  h1 {
+    border-bottom: 3px solid #5a3e8e;
+    padding-bottom: 0.3em;
+    font-size: 1.6em;
+  }
+  h2 {
+    border-left: 5px solid #5a3e8e;
+    padding-left: 0.6em;
+    margin-top: 2.5em;
+    font-size: 1.25em;
+  }
+  h3 {
+    margin-top: 1.8em;
+    font-size: 1.05em;
+    color: #333;
+  }
+  pre {
+    background: #f5f2fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.8em 1em;
+    overflow-x: auto;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  code {
+    background: #f0ecf5;
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+    font-size: 0.92em;
+  }
+  pre code { background: none; padding: 0; }
+  table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 0.92em;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.4em 0.8em;
+  }
+  th { background: #f0ecf5; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 1.5em 0; }
+  ul, ol { padding-left: 1.5em; }
+  li { margin-bottom: 0.3em; }
+  .note {
+    background: #fdf8e8;
+    border-left: 4px solid #d4a017;
+    padding: 0.6em 1em;
+    margin: 1em 0;
+    font-size: 0.93em;
+  }
+</style>
+</head>
+<body>
+{{ content }}
+</body>
+</html>

@@ -1,0 +1,14 @@
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - build/
+  - install.sh
+  - build.sh
+  - ifrku-wiki-skill.html
+  - vendor/
+  - README.md
+  - CLAUDE.md
