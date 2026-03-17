@@ -1,4 +1,5 @@
 #!/bin/bash
+cd "$(dirname "$0")/.."
 bundle exec jekyll build
 rsync -a _site/ build/skill/
 sed '1d' src/main/md/ifrku-wiki-skill.md | sed '1,/^---$/d' | sed '/^{% raw %}$/d; /^{% endraw %}$/d' > build/skill/ifrku-wiki-skill.md
