@@ -1,5 +1,7 @@
 ---
 layout: default
+name: ifrku-wiki-skill
+description: IFRKU非公式Wikiの記述規約を提供するスキルです。Wiki記事の編集やレビューの際に参照してください。
 title: "IFRKU Wiki Skill version @version@"
 lang: ja
 ---

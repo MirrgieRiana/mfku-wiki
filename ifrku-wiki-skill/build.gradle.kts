@@ -38,15 +38,18 @@ val generateSkillMd by tasks.registering {
     mdSources.forEach { source ->
         outputs.file(skillOutput.map { it.file(source.name).asFile })
     }
+    val jekyllOnlyKeys = setOf("layout")
     doLast {
         mdSources.forEach { source ->
             val resolved = jekyllWork.get().file(source.name).asFile
             val lines = resolved.readLines()
             val closingDash = lines.withIndex().filter { it.value.trim() == "---" }.drop(1).firstOrNull()?.index ?: -1
+            val frontMatter = lines.subList(1, closingDash)
+                .filter { line -> jekyllOnlyKeys.none { line.startsWith("$it:") } }
+            val body = lines.drop(closingDash + 1)
+                .filter { it.trim() !in setOf("{% raw %}", "{% endraw %}") }
             skillOutput.get().file(source.name).asFile.writeText(
-                lines.drop(closingDash + 1)
-                    .filter { it.trim() !in setOf("{% raw %}", "{% endraw %}") }
-                    .joinToString("\n"),
+                (listOf("---") + frontMatter + listOf("---") + body).joinToString("\n"),
             )
         }
     }
