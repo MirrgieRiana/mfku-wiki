@@ -54,10 +54,17 @@ val generateSkillMd by tasks.registering {
     }
 }
 
+val skillZip by tasks.registering(Zip::class) {
+    dependsOn(generateSkillMd)
+    from(skillOutput)
+    destinationDirectory = layout.buildDirectory.dir("distributions").get().asFile
+    archiveBaseName = "ifrku-wiki-skill"
+}
+
 val clean by tasks.registering(Delete::class) {
     delete(layout.buildDirectory)
 }
 
 val build by tasks.registering {
-    dependsOn(copyHtml, generateSkillMd)
+    dependsOn(skillZip)
 }
