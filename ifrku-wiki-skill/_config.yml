@@ -6,4 +6,5 @@ source: src/main/jekyll
 destination: build/jekyll
 cache_dir: build/jekyll-cache
 
-exclude: []
+exclude:
+  - build/

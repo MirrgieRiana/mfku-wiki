@@ -55,6 +55,10 @@ val generateSkillMd by tasks.registering {
     }
 }
 
+val clean by tasks.registering(Delete::class) {
+    delete(layout.buildDirectory)
+}
+
 val build by tasks.registering {
     dependsOn(copyHtml, generateSkillMd)
 }
