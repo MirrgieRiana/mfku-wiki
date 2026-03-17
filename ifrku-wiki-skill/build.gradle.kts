@@ -9,15 +9,14 @@ val bundleInstall by tasks.registering(Exec::class) {
 }
 
 val jekyllBuild by tasks.registering(Exec::class) {
-    dependsOn(bundleInstall)
     inputs.dir(jekyllSource)
+    inputs.files(bundleInstall)
     outputs.dir(jekyllOutput)
     commandLine("bash", "scripts/jekyll-build.sh")
 }
 
 val copyHtml by tasks.registering(Sync::class) {
-    dependsOn(jekyllBuild)
-    from(jekyllOutput)
+    from(jekyllBuild)
     into(skillOutput)
 }
 
