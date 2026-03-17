@@ -2,6 +2,8 @@ markdown: kramdown
 kramdown:
   input: GFM
 
+source: src/main/md
+
 exclude:
   - Gemfile
   - Gemfile.lock
