@@ -1,8 +1,10 @@
 ---
 layout: default
-title: "IFRKU Wiki Skill"
+title: "IFRKU Wiki Skill version @version@"
 lang: ja
 ---
+
+# IFRKU Wiki Skill version @version@
 
 本スキルはIFRKU非公式Wikiの記述規約を提供します。
 

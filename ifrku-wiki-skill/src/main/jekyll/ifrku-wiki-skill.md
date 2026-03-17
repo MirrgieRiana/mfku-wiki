@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "IFRKU非公式Wiki 記述規約 version 0.0.1"
+title: "IFRKU非公式Wiki 記述規約 version @version@"
 lang: ja
 ---
 
-# IFRKU非公式Wiki 記述規約 version 0.0.1
+# IFRKU非公式Wiki 記述規約 version @version@
 
 ## 前文
 
