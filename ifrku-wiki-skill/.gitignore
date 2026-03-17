@@ -1,4 +1,3 @@
-_site/
-.jekyll-cache/
-vendor/
+build/
+.gradle/
 Gemfile.lock

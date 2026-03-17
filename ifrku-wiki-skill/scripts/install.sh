@@ -1,3 +1,3 @@
 #!/bin/bash
 cd "$(dirname "$0")/.."
-bundle install --path vendor/bundle
+BUNDLE_PATH=build/vendor/bundle bundle install

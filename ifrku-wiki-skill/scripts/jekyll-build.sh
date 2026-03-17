@@ -1,3 +1,3 @@
 #!/bin/bash
 cd "$(dirname "$0")/.."
-bundle exec jekyll build
+BUNDLE_PATH=build/vendor/bundle bundle exec jekyll build
