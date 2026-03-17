@@ -2,7 +2,6 @@
 layout: default
 title: "IFRKU非公式Wiki 記述規約 version 0.0.1"
 lang: ja
-render_with_liquid: false
 ---
 
 # IFRKU非公式Wiki 記述規約 version 0.0.1
