@@ -11,17 +11,17 @@ die() {
   exit 1
 }
 
-read_file() {
-  local path="$1"
-  [[ -f "$path" ]] || die "$path not found"
-  local content
-  content=$(<"$path")
-  [[ -n "$content" ]] || die "$path is empty"
-  echo "$content"
+require_env() {
+  local name="$1"
+  [[ -n "${!name:-}" ]] || die "Environment variable $name is not set"
 }
 
 load_token() {
-  read_file "$WIKIWIKI_TOKEN_FILE"
+  [[ -f "$WIKIWIKI_TOKEN_FILE" ]] || die "$WIKIWIKI_TOKEN_FILE not found. Run wikiwiki-auth.sh first."
+  local token
+  token=$(<"$WIKIWIKI_TOKEN_FILE")
+  [[ -n "$token" ]] || die "$WIKIWIKI_TOKEN_FILE is empty"
+  echo "$token"
 }
 
 wikiwiki_curl() {

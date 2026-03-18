@@ -5,7 +5,7 @@ IFRKU非公式Wikiの記述規約スキルです。
 ## wikiwikiスクリプト
 
 wikiwiki REST APIを操作するスクリプト群です。
-事前に `~/.wikiwiki/WIKIWIKI_KEY_ID` と `~/.wikiwiki/WIKIWIKI_SECRET` にAPIキーのIDとシークレットを配置してください。
+環境変数 `WIKIWIKI_KEY_ID` と `WIKIWIKI_SECRET` にAPIキーのIDとシークレットを設定してから使用してください。
 
 ### scripts/wikiwiki-auth.sh
 

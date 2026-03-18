@@ -2,10 +2,10 @@
 set -euo pipefail
 source "$(dirname "$0")/wikiwiki-common.sh"
 
-KEY_ID=$(read_file "$WIKIWIKI_DIR/WIKIWIKI_KEY_ID")
-SECRET=$(read_file "$WIKIWIKI_DIR/WIKIWIKI_SECRET")
+require_env WIKIWIKI_KEY_ID
+require_env WIKIWIKI_SECRET
 
-PAYLOAD=$(jq -n --arg id "$KEY_ID" --arg secret "$SECRET" \
+PAYLOAD=$(jq -n --arg id "$WIKIWIKI_KEY_ID" --arg secret "$WIKIWIKI_SECRET" \
   '{api_key_id: $id, secret: $secret}')
 
 RESPONSE=$(curl --fail --silent --show-error -X POST "$WIKIWIKI_API_BASE/::api/auth" \
