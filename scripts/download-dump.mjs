@@ -1,8 +1,12 @@
 // WikiWiki.jp 管理コンソールからダンプをダウンロードするPlaywrightスクリプト
 //
-// 環境変数:
-//   WIKIWIKI_KEY_ID  - WikiWikiコントロールパネルのログインID（メールアドレス）
-//   WIKIWIKI_SECRET  - WikiWikiコントロールパネルのパスワード
+// 認証情報（以下のいずれかで設定）:
+//   環境変数:
+//     WIKIWIKI_KEY_ID  - WikiWikiコントロールパネルのログインID（メールアドレス）
+//     WIKIWIKI_SECRET  - WikiWikiコントロールパネルのパスワード
+//   ファイル（環境変数が未設定の場合のフォールバック）:
+//     ~/.wikiwiki/WIKIWIKI_KEY_ID
+//     ~/.wikiwiki/WIKIWIKI_SECRET
 //
 // 使い方:
 //   npx playwright install chromium
@@ -32,7 +36,8 @@ const secret = readCredential("WIKIWIKI_SECRET");
 
 if (!keyId || !secret) {
   console.error(
-    "Error: WIKIWIKI_KEY_ID and WIKIWIKI_SECRET environment variables are required."
+    "Error: WIKIWIKI_KEY_ID and WIKIWIKI_SECRET are required.\n" +
+    "Set them as environment variables or place them in ~/.wikiwiki/ files."
   );
   process.exit(1);
 }

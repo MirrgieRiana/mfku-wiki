@@ -3,4 +3,6 @@
 build/
 /ai/
 node_modules/
+package.json
+package-lock.json
 screenshots/
