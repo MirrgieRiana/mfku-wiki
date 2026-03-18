@@ -8,7 +8,7 @@ require_env WIKIWIKI_SECRET
 PAYLOAD=$(jq -n --arg id "$WIKIWIKI_KEY_ID" --arg secret "$WIKIWIKI_SECRET" \
   '{api_key_id: $id, secret: $secret}')
 
-RESPONSE=$(curl --fail --silent --show-error -X POST "$WIKIWIKI_API_BASE/::api/auth" \
+RESPONSE=$(curl --fail --silent --show-error -X POST "$WIKIWIKI_API_BASE/auth" \
   -H "Content-Type: application/json" \
   -d "$PAYLOAD") || die "API request failed"
 
