@@ -29,3 +29,17 @@ wikiwiki_curl() {
   token=$(load_token)
   curl --fail --silent --show-error -H "Authorization: Bearer $token" "$@"
 }
+
+# リポジトリルートの all.wiki.json を探す
+find_wiki_json() {
+  local dir
+  dir=$(cd "$(dirname "$0")" && pwd)
+  while [[ "$dir" != "/" ]]; do
+    if [[ -f "$dir/all.wiki.json" ]]; then
+      echo "$dir/all.wiki.json"
+      return 0
+    fi
+    dir=$(dirname "$dir")
+  done
+  return 1
+}
