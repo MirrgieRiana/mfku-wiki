@@ -12,9 +12,6 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
-    env:
-      WIKIWIKI_KEY_ID: ${{ secrets.WIKIWIKI_KEY_ID }}
-      WIKIWIKI_SECRET: ${{ secrets.WIKIWIKI_SECRET }}
     steps:
       - uses: actions/checkout@v4
 
