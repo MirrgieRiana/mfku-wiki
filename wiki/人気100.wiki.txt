@@ -1,2 +1,0 @@
-参照回数の多いページ上位100件を表示します。（Total）
-#popular(100,FrontPage)

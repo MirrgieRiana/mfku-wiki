@@ -10,14 +10,18 @@
 - [GitHubリポジトリ](https://github.com/MirrgieRiana/mfku-wiki)
 - [公開ページ](https://mirrgieriana.github.io/mfku-wiki/)
 
-### 各種ファイル
+### ビルド生成物
 
-- [all.wiki.json](all.wiki.json)
-   - JSON形式のダンプファイルです。
-   - ツールで処理しやすい代わりに、1行が長く、直接読むのには向きません。
-- [all.wiki.txt](all.wiki.txt): テキスト形式のダンプファイルです。
-   - プレーンテキスト形式のダンプファイルです。
-   - 本来のWiki構文の塊であり、直接読むのに向いていますが、ツールで正確に処理することは困難です。
+ビルドすると `build/` ディレクトリ内に以下が生成されます：
+
+- `all.wiki.json`: JSON形式のダンプファイル
+- `all.wiki.txt`: テキスト形式のダンプファイル
+- `wiki/`: ページ毎のテキストファイル
+
+### APIスクリプト
+
+- `scripts/get-page.sh <ページ名>`: WikiWiki APIから指定ページの内容を取得
+- `scripts/list-pages.sh`: WikiWiki APIからページ一覧を取得
 
 ## 更新手順
 

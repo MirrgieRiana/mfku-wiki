@@ -47,15 +47,3 @@ wikiwiki_curl() {
   cat "$tmpfile"
   rm -f "$tmpfile" "$tmpfile.err"
 }
-
-# リポジトリルートの all.wiki.json を探す
-find_wiki_json() {
-  local dir
-  dir="$(cd "$(dirname "$0")/../.." && pwd)"
-  local json="$dir/all.wiki.json"
-  if [[ -f "$json" ]]; then
-    echo "$json"
-  else
-    return 1
-  fi
-}
