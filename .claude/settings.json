@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(scripts/wikiwiki-auth.sh)",
+      "Bash(scripts/wikiwiki-get-page.sh *)",
+      "Bash(scripts/wikiwiki-list-pages.sh)"
+    ]
+  }
+}
