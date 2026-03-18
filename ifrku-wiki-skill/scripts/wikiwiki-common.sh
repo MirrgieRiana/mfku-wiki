@@ -34,7 +34,7 @@ wikiwiki_curl() {
   local curl_exit=$?
   if [[ $curl_exit -ne 0 ]]; then
     local err_msg
-    err_msg=$(<"$tmpfile.err")
+    err_msg=$(cat "$tmpfile.err" 2>/dev/null || echo "(no error details)")
     rm -f "$tmpfile" "$tmpfile.err"
     die "API request failed (curl exit $curl_exit): $err_msg"
   fi
