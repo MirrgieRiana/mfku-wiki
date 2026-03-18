@@ -13,11 +13,10 @@ PAGE_NAME="$1"
 
 # APIスクリプトが使えるか試みる
 if [[ -f "$API_SCRIPTS/wikiwiki-get-page.sh" ]]; then
-  result=$(bash "$API_SCRIPTS/wikiwiki-get-page.sh" "$PAGE_NAME" 2>/dev/null) && {
+  if result=$(bash "$API_SCRIPTS/wikiwiki-get-page.sh" "$PAGE_NAME"); then
     echo "$result"
     exit 0
-  }
-  echo "Warning: API unreachable; falling back to local data" >&2
+  fi
 fi
 
 # ローカルのall.wiki.jsonからページ内容を取得

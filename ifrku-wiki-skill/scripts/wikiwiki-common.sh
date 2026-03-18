@@ -27,7 +27,25 @@ load_token() {
 wikiwiki_curl() {
   local token
   token=$(load_token)
-  curl --fail --silent --show-error -H "Authorization: Bearer $token" "$@"
+  local tmpfile
+  tmpfile=$(mktemp)
+  local http_code
+  http_code=$(curl --silent --show-error -w '%{http_code}' -o "$tmpfile" -H "Authorization: Bearer $token" "$@" 2>"$tmpfile.err")
+  local curl_exit=$?
+  if [[ $curl_exit -ne 0 ]]; then
+    local err_msg
+    err_msg=$(<"$tmpfile.err")
+    rm -f "$tmpfile" "$tmpfile.err"
+    die "API request failed (curl exit $curl_exit): $err_msg"
+  fi
+  if [[ "$http_code" -ge 400 ]]; then
+    local body
+    body=$(<"$tmpfile")
+    rm -f "$tmpfile" "$tmpfile.err"
+    die "API request failed (HTTP $http_code): $body"
+  fi
+  cat "$tmpfile"
+  rm -f "$tmpfile" "$tmpfile.err"
 }
 
 # リポジトリルートの all.wiki.json を探す
