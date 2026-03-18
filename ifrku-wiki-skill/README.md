@@ -13,6 +13,10 @@ wikiwiki REST APIを操作するスクリプト群です。
 トークンの有効期限は24時間です。
 他のスクリプトを使う前に実行してください。
 
+---
+
+コマンド例
+
 ```
 scripts/wikiwiki-auth.sh
 ```
@@ -22,13 +26,33 @@ scripts/wikiwiki-auth.sh
 指定したページの内容を取得します。
 ページ名はURLエンコードされるため、日本語ページ名もそのまま渡せます。
 
+---
+
+コマンド例
+
 ```
 scripts/wikiwiki-get-page.sh FrontPage
+```
+
+---
+
+出力例
+
+```
+{
+    "page": "ページのタイトル",
+    "source": "ページの内容",
+    "timestamp": "2000-01-01T00:00:00+00:00"
+}
 ```
 
 ### scripts/wikiwiki-list-pages.sh
 
 全ページの一覧を取得します。
+
+---
+
+コマンド例
 
 ```
 scripts/wikiwiki-list-pages.sh
