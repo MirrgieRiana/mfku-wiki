@@ -1,0 +1,33 @@
+
+* セラミックレンガ募集のお知らせ（Notice for Ceramic Brick Donations） [#n1757e28]
+
+v3で追加されたフェアリークエスト。
+
+** クエスト [#o2c16c05]
+
+妖精研究所が真空崩壊炉を建てるからレンガを募集するという内容。
+
+妖精研究所コーディリア支部といえば、かの重大な事故においてまさにその真空崩壊炉を爆発させた支部である。
+
+** 取引 [#l75b6ead]
+
+v3時点では石膏ボードの唯一の入手先。
+- 納品アイテムがレンガブロックと少し重い。
+
+** 全文 [#l56bf1c4]
+
+> セラミックレンガ募集のお知らせ
+
+> 真空崩壊炉改修工事に向けてセラミックレンガの寄付を広く募集しております。必要な場合は、リユース可能な建築資材を選別してご提供いたします。
+
+> 妖精研究所
+> コーディリア支部
+
+----
+
+> Notice for Ceramic Brick Donations
+
+> We are actively seeking donations of ceramic bricks for the reconstruction project of the vacuum decay reactor. If you are in need, we will selectively provide reusable building materials.
+
+> The Institute of Fairy Research
+> Cordelia Branch

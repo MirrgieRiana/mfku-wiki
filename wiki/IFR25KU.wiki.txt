@@ -1,0 +1,24 @@
+
+* IFR25KU: The Institute of Fairy Research 2025 Kakera Unofficial [#wc32e2ad]
+
+> かしましきテルティアの地 (進捗説明文)
+
+> The Noisy Land of Tertia (進捗説明文)
+> 騒々しいテルティアの地
+
+2025年8月26日にMF24KUから派生したMOD。
+
+2025年8月27日時点での著者は、「The Developer of MirageFairy, Generation 7」および「夜のかけら」。
+
+----
+
+ModrinthやCurseForgeに登録されている正式名称は
+『''IFR25KU: The Institute of Fairy Research 2025 Kakera Unofficial''』。
+
+非常に長いため、タイトル表記以外の場所では基本的に常にIFR25KUと呼ばれる。
+
+** リンク集 [#qf2f5cc9]
+
+MirageFairyのすべてが分かるページを参照。
+
+公式Discord上でIFR25KU Serverを提供しています。詳細はそちらの記事を参照してください。

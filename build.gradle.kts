@@ -24,11 +24,11 @@ val unpackWikiDump = tasks.register<Sync>("unpackWikiDump") {
 val generateDumpText = tasks.register("generateDumpText") {
     group = "build"
     inputs.files(unpackWikiDump)
-    val destinationFile = layout.buildDirectory.file("all.wiki.txt")
+    val destinationFile = layout.projectDirectory.file("all.wiki.txt")
     outputs.file(destinationFile)
     doLast {
-        destinationFile.get().asFile.parentFile?.mkdirs()
-        destinationFile.get().asFile.printWriter().use { writer ->
+        destinationFile.asFile.parentFile?.mkdirs()
+        destinationFile.asFile.printWriter().use { writer ->
             unpackWikiDump.get().outputs.files.asFileTree
                 .sortedBy { it.path }
                 .asSequence()
@@ -46,7 +46,7 @@ val generateDumpText = tasks.register("generateDumpText") {
                     writer.print("\n")
                 }
         }
-        logger.lifecycle("Written: ${destinationFile.get().asFile.absolutePath}")
+        logger.lifecycle("Written: ${destinationFile.asFile.absolutePath}")
     }
 }
 tasks.named("assemble").configure { dependsOn(generateDumpText) }
@@ -55,11 +55,11 @@ tasks.named("assemble").configure { dependsOn(generateDumpText) }
 val generateDumpJson = tasks.register("generateDumpJson") {
     group = "build"
     inputs.files(unpackWikiDump)
-    val destinationFile = layout.buildDirectory.file("all.wiki.json")
+    val destinationFile = layout.projectDirectory.file("all.wiki.json")
     outputs.file(destinationFile)
     doLast {
-        destinationFile.get().asFile.parentFile?.mkdirs()
-        destinationFile.get().asFile.printWriter().use { writer ->
+        destinationFile.asFile.parentFile?.mkdirs()
+        destinationFile.asFile.printWriter().use { writer ->
             val data = unpackWikiDump.get().outputs.files.asFileTree
                 .sortedBy { it.path }
                 .asSequence()
@@ -68,7 +68,7 @@ val generateDumpJson = tasks.register("generateDumpJson") {
             val json = GsonBuilder().setPrettyPrinting().create().toJson(data)
             writer.println(json)
         }
-        logger.lifecycle("Written: ${destinationFile.get().asFile.absolutePath}")
+        logger.lifecycle("Written: ${destinationFile.asFile.absolutePath}")
     }
 }
 tasks.named("assemble").configure { dependsOn(generateDumpJson) }
@@ -94,6 +94,6 @@ val dumpWikiDirectory = tasks.register("dumpWikiDirectory") {
 val generateWikiDirectory = tasks.register<Sync>("generateWikiDirectory") {
     group = "build"
     from(dumpWikiDirectory)
-    into(layout.buildDirectory.dir("wiki"))
+    into(layout.projectDirectory.dir("wiki"))
 }
 tasks.named("assemble").configure { dependsOn(generateWikiDirectory) }

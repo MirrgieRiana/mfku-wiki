@@ -1,0 +1,121 @@
+
+ここは、MirageFairyに関する''公式および非公式の資料の置き場を網羅的にまとめる''ことを目指すページです。
+公式の資料は公式サイトに概ね載っていますが、このページは誰でも編集ができる場所に、非公式の情報も含めて掲載できることが趣旨です。
+
+----
+
+#contents
+
+* IFR25KU: The Institute of Fairy Research 2025 Kakera Unofficial [#v958a031]
+
+2025年8月に夜のかけら氏によってMF24KUからフォークされた派生MODです。
+
+創作プロジェクトそのものとしてはIFRKUと呼ばれ、これはおそらくThe Institute of Fairy Research Kakera Unofficialの略です。
+IFRKUプロジェクトはMFKUプロジェクトからの派生です。
+世界観そのものを表すときは、IFR（The Institute of Fairy Research）と呼ばれることもあります。
+そのほかKU（Kakera Unofficial）と呼ばれることもあり、これはMirageFairy公式でない夜のかけらの派生全体を表します。
+
+|所属|リンク|説明|h
+|IFRKU公式|[[公式Webサイト>https://kakera-unofficial.notion.site]]|MFKUおよびIFRKUの公式Webサイトです。&br;旧作MODのほか、MFAと呼ばれる世界観資料も掲載されています。&br;MirageFairy本家の公式サイトは2025年2月1日現在確認されていません。|
+|IFRKU公式|[[Modrinth>https://modrinth.com/mod/ifr25ku]]|Modの配布サイトです。|
+|IFRKU公式|[[CurseForge>https://www.curseforge.com/minecraft/mc-mods/ifr25ku]]|Modの配布サイトです。|
+|IFRKU公式|[[Discord>https://discord.gg/bppQyAZtkA]]|IFRKU Discordの招待リンクです。|
+|IFRKU公式|[[GitHub>https://github.com/MirrgieRiana/IFR25KU]]|IFR25KUのソースコードを公開している場所です。&br;バグ報告もこちらからできます。|
+|IFRKU公式|[[CHANGELOG>https://mirrgieriana.github.io/IFR25KU/CHANGELOG.html]]|公式による唯一の網羅的なドキュメントである、MODの更新履歴です。|
+|IFRKU公式|[[IFR25KU Lang Table>https://mirrgieriana.github.io/IFR25KU/lang_table.html]]&br;[[IFR25KU Lang Table (JSON)>https://mirrgieriana.github.io/IFR25KU/lang_table.json]]&br;[[IFR25KU Lang Table (CSV)>https://mirrgieriana.github.io/IFR25KU/lang_table.csv]]|ゲーム内の翻訳ファイルをWeb上で公開しているページがあります。&br;これは世界観考察などにおいて非常に役に立ちます。&br;また、MirageFairyプロジェクトでは英語版と日本語版でかけ離れた名称を持つ&br;事物が非常にありふれているため、これをLLMに持っていくといいです。|
+|非公式|[[IFRKU非公式Wiki>https://wikiwiki.jp/mifai2024/]]|本Wikiです。&br;非公式であり、誰でも編集できますが、ほとんどの部分はMOD作者によって書かれています。|
+
+** IFR25KU Server [#ze207174]
+
+IFR25KU公式のマルチサーバーです。
+
+|所属|リンク|説明|h
+|IFRKU公式|[[Client Modpack>https://modrinth.com/modpack/ifr25ku-client-2509]]|IFR25KU Official Standard Client ModPack 202509&br;公式サーバー2025/09のクライアントサイドModpackです。|
+|IFRKU公式|[[Server Modpacl>https://modrinth.com/modpack/ifr25ku-server-2509]]|IFR25KU Official Standard Server ModPack 202509&br;公式サーバー2025/09のサーバーサイドModpackです。|
+|IFRKU公式|[[Japan Minecraft Servers>https://minecraft.jp/servers/68fc4f08e016a50710000005]]|Japan Minecraft Serversの紹介記事です。|
+|IFRKU公式|[[MinePortal>https://mineportal.jp/servers/cmh7jrxl00000c71ing7q3nas]]|MinePortalの紹介記事です。|
+|IFRKU公式|[[クラフターズコロニー>https://minecraft-mcworld.com/181106/]]|クラフターズコロニーの紹介記事です。|
+
+* MF24KU [#bff1cac0]
+
+2024年11月に夜のかけら氏によってフォークされた、MirageFairy2024の非公式派生MODです。
+
+元はMirageFairy2024-Kakera-Unofficialという長いタイトルでした。
+
+----
+
+2025年7月現在、原作のMirageFairy2024のv14（2024年9月30日）時点のコードを引き継いで開発が進んでいます。
+
+|所属|リンク|説明|h
+|MFKU公式|[[公式Webサイト>https://kakera-unofficial.notion.site]]|MirageFairyプロジェクトのKakera-Unofficial派生の公式Webサイトです。&br;旧作MODのほか、MFAと呼ばれる世界観資料も掲載されています。&br;MirageFairy本家の公式サイトは2025年2月1日現在確認されていません。|
+|MFKU公式|[[Modrinth>https://modrinth.com/mod/miragefairy2024-kakera-unofficial]]|MF24KUのMOD配布ページです。&br;MODの説明が英語で掲載されています。&br;前提MODがありますが、Modrinthアプリからインストールすると前提MODも自動的にインストールしてくれます。|
+|MFKU公式|[[Discord>https://discord.gg/qSWsnZttB8]]|MirageFairy-Kakera-UnofficialのDiscordです。&br;一部の条件に該当するメンバーに対し、制限がかけられています。|
+|MFKU公式|[[GitHub>https://github.com/MirrgieRiana/MirageFairy2024-Kakera-Unofficial]]|MF24KUのソースコードを公開している場所です。|
+|MFKU公式|[[CHANGELOG.md>https://github.com/MirrgieRiana/MirageFairy2024-Kakera-Unofficial/blob/main/CHANGELOG.md]]|MF24KUの日本語版更新履歴です。&br;これが唯一の公式のドキュメントです。|
+|MFKU公式|[[MF24KU Lang Table>https://mirrgieriana.github.io/MirageFairy2024-Kakera-Unofficial/lang_table.html]]|ゲーム内の翻訳ファイルをWeb上で公開しているページがあります。&br;これは世界観考察などにおいて非常に役に立ちます。|
+|MFKU公式|[[公式Webサイトミラー>https://mirrgieriana.github.io/MFKU-Official-Web-Site-Mirror/]]|これは上記公式Webサイトのミラーです。&br;情報は必ずしも最新とは限りませんが、JavaScriptを使用しておらず、AIを含むツールがアクセスできます。&br;[[GitHubリポジトリ>https://mirrgieriana.github.io/MFKU-Official-Web-Site-Mirror/]]|
+|非公式|[[MFKU非公式Wiki>https://wikiwiki.jp/mifai2024/]]|本Wikiです。&br;非公式であり、誰でも編集できますが、ほとんどの部分はMOD作者によって書かれています。|
+|非公式|[[MFKU非公式Wiki Dump>https://mirrgieriana.github.io/mfku-wiki/wiki-dump_out.txt]]|本Wikiのテキストデータが1個にまとまったファイルです。&br;常に最新とは限りませんが、1個のファイルとしてAIツールが効率的に利用できます。&br;[[GitHubリポジトリ>https://github.com/MirrgieRiana/mfku-wiki]]|
+
+** MF24KU Test Server [#r33c916b]
+
+MF24KUの公式テストサーバーです。
+
+詳細はMF24KU Test Serverを参照してください。
+
+|所属|リンク|説明|h
+|MFKU公式|[[Modpack Modrinth>https://modrinth.com/modpack/mf24ku-test-server-modpack]]|MF24KU & Magitech Sample Modpack&br;公式テストサーバーに入れるModPackです。|
+
+* MirageFairy2024 [#uec3ca7f]
+
+** 『MirageFairy2024』とは？ [#e15db267]
+
+公式GitHubには以下の英語の説明があります。
+
+> The Minecraft MOD for the MirageFairy project in 2024.
+> （2024年のMirageFairyプロジェクトのMinecraft MOD）
+
+MirageFairyという創作プロジェクトがあり、MirageFairy2024はそのマイクラMODです。
+
+----
+
+旧作にはMirageFairy2023、MirageFairy2019があります。
+MOD作品ごとに舞台が異なり、登場人物や設定等にも変化があります。
+
+MirageFairyの世界観はすべてのMODおよび、MODでない作品の間で共有されています。
+
+----
+
+2025年7月現在、Modrinthの最終更新は2024年9月30日で止まっています。
+
+** リンク [#qf587673]
+
+|所属|リンク|説明|h
+|MirageFairy公式|[[Modrinth>https://modrinth.com/mod/miragefairy2024]]|最新のMirageFairy2024が入手できます。&br;前提MODがありますが、Modrinthアプリからインストールすると前提MODも自動的にインストールしてくれます。|
+|MirageFairy公式|[[『MirageFairy2024公式・交流』Discord>https://discord.gg/9Gre3MHGvD]]|閉鎖済み|
+|MirageFairy公式|[[『MirageFairy』公式Webサイト>https://miragefairy.notion.site/]]|閉鎖済み|
+|MirageFairy公式|[[GitHub>https://github.com/MirageFairy/MirageFairy2024]]|ソースコードなどが置かれています。|
+|MirageFairy公式|[[CHANGELOG.md>https://github.com/MirageFairy/MirageFairy2024/blob/main/CHANGELOG.md]]|更新履歴です。|
+
+** MirageFairy2024 Test Play Server [#re0f52ae]
+
+公式のテストプレイサーバーです。
+
+|所属|リンク|説明|h
+|MirageFairy公式|MirageFairy2024 Test Play Server|閉鎖済み|
+
+* MirageFairy2023 [#r623c3d3]
+
+|所属|リンク|説明|h
+|非公式|[[MirageFairy2023非公式Wiki>https://wikiwiki.jp/mifai2023/]]|旧作のWikiです。|
+
+* MirageFairy2019 [#v26535df]
+
+|所属|リンク|説明|h
+|非公式|[[MirageFairy2019　非公式Wiki>https://w.atwiki.jp/miragefairy2019/]]|旧作のWikiです。|
+
+* 世界観の考察 [#g587c560]
+
+MirageFairy・MFKU・IFRKUには、重厚で詳細な世界観設定が練り込まれています。
+
+世界観の理解を深めるための資料の詳細は、世界観のページで取り扱っています。

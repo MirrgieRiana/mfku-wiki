@@ -1,0 +1,11 @@
+//携帯閲覧時に表示されるトップページです。
+
+ここは携帯閲覧時に表示されるトップページ（ページ名:m）です。
+→このページを編集する:[[編集:m]]
+　
+PC閲覧時はトップページに下記のページが表示されます。
+-[[MenuBar]]（メニュー）
+-[[FrontPage]]（メイン）
+　
+
+&size(10){TOTAL.&counter(total);　T.&counter(today);　Y.&counter(yesterday);};

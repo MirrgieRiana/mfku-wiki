@@ -1,0 +1,33 @@
+
+* 即席ファンタスティックカーニバル（Impromptu Fantastic Carnival） [#va24c6e2]
+
+v3で追加されたフェアリークエスト。
+
+** クエスト [#o2fa41cf]
+
+ケーキが足りなくなったので食べられる妖精をよこせという内容。
+
+妖精を食べるネタは旧作でも何度か登場していた。
+- 特にケーキ精は自分からお皿の上に乗ることがMirageFairy2019のJEI MFAで示されている。
+
+** 取引 [#c15de2cf]
+
+フラクタルウィスプからケーキが作れる。
+- v3時点では妖精が1種類も登場していないためか。
+- フラクタルウィスプはハイメヴィスカから無限に入手可能で、ケーキは満腹度回復量が多いため、常食するのも手か。
+
+** 全文 [#d1c5b9b4]
+
+> 即席ファンタスティックカーニバル
+
+> たいへん！ケーキが足りないのにニワトリがなかなか卵を産まないの！お願い！作ってる時間はないから、今すぐ誰か代わりになって！
+
+> 麺麭精ブレアージャ
+
+----
+
+> Impromptu Fantastic Carnival
+
+> Help! We're running out of cakes, and the chickens are taking their sweet time laying eggs! Can someone please help out? We don't have time to bake, so substitute it right away!
+
+> Breadia the fairy of bread

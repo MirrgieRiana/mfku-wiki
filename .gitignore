@@ -2,10 +2,3 @@
 .gradle/
 build/
 /ai/
-node_modules/
-package.json
-package-lock.json
-screenshots/
-all.wiki.json
-all.wiki.txt
-/wiki/

@@ -1,0 +1,81 @@
+
+#contents
+
+* IFR25KU Server [#f2df73b0]
+
+IFR25KU Discord上からアクセス可能なマルチサーバー。
+
+#ref(CnP_27102025_124154.png)
+
+* 詳細 [#d80f3966]
+
+概要、ログイン方法などの情報は[[Japan Minecraft Serversの紹介ページ>https://minecraft.jp/servers/68fc4f08e016a50710000005]]を参照するのが早いです。
+
+他にも同様の紹介ページがいくつかの登録サイト上に掲載されています。
+MirageFairyのすべてが分かるページも参照してください。
+
+----
+
+公式Discordのお知らせチャンネルにも情報があります。
+
+https://discord.com/channels/1411340318644895891/1421417343153602581
+
+* サーバー仕様 [#wba753db]
+
+以下の情報は、DiscordやMinecraft上のチャットなどで言及されたサーバーの仕様に関するまとめです。
+
+IFR25KU Serverでは、サーバー仕様を網羅的に記述した公式のまとめは存在しません。
+
+** 202509 [#f360f464]
+
+*** 要点 [#ob567d62]
+
+- Normal難易度
+- &color(blue){誰か練ると即朝になる};
+- &color(blue){死亡時墓ができる};
+- &color(red){可視範囲が少し狭い};
+
+*** 詳細 [#od4ba2f5]
+
+[[Modpack>https://modrinth.com/modpack/ifr25ku-server-2509]]
+
+#code(,nonumber){{
+playersSleepingPercentage 1
+}}
+
+#code(diff,nonumber){{
+-allow-flight=false
++allow-flight=true
+
+-difficulty=easy
++difficulty=normal
+
+-enable-command-block=false
++enable-command-block=true
+
+-max-tick-time=60000
++max-tick-time=300000
+
+-motd=A Minecraft Server
++motd=§dIFR25KU Server
+
+-simulation-distance=10
++simulation-distance=6
+
+-spawn-protection=16
++spawn-protection=0
+
+-view-distance=10
++view-distance=6
+}}
+
+* 本記事への掲載に関して [#bf387e15]
+
+本記事に含まれるIFR25KU Serverに関する情報は、公式の許可を得て掲載しています。
+
+#ref(CnP_27092025_151253.png)
+
+> 本Discord内で提供されるマルチサーバーに関するすべての情報について、2025年9月27日時点で「MFKU非公式Wiki Wiki*」と呼ばれる、以下のURLに記載の非公式サイトに掲載することを許可します。それは、本Discordへの参加なしにマルチサーバーにログイン可能とするような情報も含まれます。
+> https://wikiwiki.jp/mifai2024/
+
+https://discord.com/channels/1411340318644895891/1411490449293840466/1421377372262764636

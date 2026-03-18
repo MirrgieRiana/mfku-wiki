@@ -1,0 +1,8 @@
+
+MF24KUではいくつかのカスタム絵文字が定義されている。
+
+例えば妖精のパッシブスキルのツールチップ内で使われる魔力を表す ◇ は、EMIでは /\uE608/ のように記述すると呼び出せる。
+
+* 一覧 [#p8387713]
+ 
+https://github.com/MirrgieRiana/MirageFairy2024-Kakera-Unofficial/blob/242949df9fbbbef9cf4b963f525ff626f290f2fb/common/src/main/kotlin/miragefairy2024/mod/EmojiModule.kt#L6
