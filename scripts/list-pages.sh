@@ -14,7 +14,7 @@ if [[ -f "$API_SCRIPTS/wikiwiki-list-pages.sh" ]]; then
     echo "$result"
     exit 0
   }
-  echo "(API unreachable; falling back to local data)" >&2
+  echo "Warning: API unreachable; falling back to local data" >&2
 fi
 
 # ローカルのall.wiki.jsonからページ一覧を取得
