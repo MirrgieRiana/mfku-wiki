@@ -9,8 +9,9 @@
 //   node scripts/download-dump.mjs
 
 import { chromium } from "playwright";
-import { mkdirSync, appendFileSync } from "fs";
+import { mkdirSync, appendFileSync, readFileSync, existsSync } from "fs";
 import { resolve, join } from "path";
+import { homedir } from "os";
 
 const WIKI_NAME = "mifai2024";
 const CONTROL_PANEL_URL = `https://c.wikiwiki.jp/wiki/${WIKI_NAME}/`;
@@ -19,8 +20,15 @@ const DUMPS_DIR = resolve(process.cwd(), "dumps");
 const SCREENSHOTS_DIR = resolve(process.cwd(), "screenshots");
 const DOWNLOAD_TIMEOUT_MS = 120000;
 
-const keyId = process.env.WIKIWIKI_KEY_ID;
-const secret = process.env.WIKIWIKI_SECRET;
+function readCredential(envName) {
+  if (process.env[envName]) return process.env[envName];
+  const filePath = join(homedir(), ".wikiwiki", envName);
+  if (existsSync(filePath)) return readFileSync(filePath, "utf-8").trim();
+  return undefined;
+}
+
+const keyId = readCredential("WIKIWIKI_KEY_ID");
+const secret = readCredential("WIKIWIKI_SECRET");
 
 if (!keyId || !secret) {
   console.error(
