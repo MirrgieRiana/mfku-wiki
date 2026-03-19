@@ -7,6 +7,7 @@
 
 IFRKU非公式Wiki（wikiwiki.jp/mifai2024）の運用支援リポジトリです。
 IFR25KUはMirageFairy2024のKUフォーク（Kakera Unofficial）で、Minecraft MODです。
+`wiki-dump/` にWikiダンプのビルドスクリプトと出力ファイルがあります。
 `ifrku-wiki-skill/` にWiki記述規約スキルがあります。
 
 ## 資料
