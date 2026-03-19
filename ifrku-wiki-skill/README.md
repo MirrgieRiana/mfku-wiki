@@ -1,6 +1,7 @@
 # ifrku-wiki-skill
 
-IFRKU非公式Wikiの記述規約スキルです。
+IFRKU非公式Wikiの記述規約を提供するClaude用のスキルです。
+Wiki記事の編集やレビューの際に参照してください。
 
 ## 構成ファイル
 
