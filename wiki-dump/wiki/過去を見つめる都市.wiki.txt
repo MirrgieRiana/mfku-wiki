@@ -6,7 +6,7 @@
 > Graveyard of Civilization (進捗)
 > 文明の墓場
 
-&ref(2025-12-06_09.26.50.png);
+#ref(2025-12-06_09.26.50.png,center)
 
 v30kuで追加された3番目のバイオーム。
 

@@ -1,0 +1,55 @@
+* シャルパの夜 〜夜空を彩るレジンの星〜（XARPA NIGHT - Resin Glow Across the Night Sky） [#z74b2e99]
+
+v31kuで追加されたフェアリークエスト。
+
+** クエスト [#ea4ba3d8]
+
+シャルパ形而学会および紅天市公式アカウントによる、シャルパ独立記念日の祝賀SNS広告。
+
+レジンを投げ合ってお祝いするというイベントらしい。
+- 「プラスチックの硬さは愛の硬さ」という謎のキャッチコピーが添えられている。
+- 「0月0日」というありえない日付が記されているが、人間側の暦とは異なる体系のためか。
+-- 0起点のカレンダーの正月？
+
+** 取引 [#cac2c7f6]
+
+ハイメヴィスカの涙7個を納品するとエメラルド2個が得られる。
+- 加工時間は0.5秒。
+- ハイメヴィスカの涙は滴るハイメヴィスカの原木から低確率で入手できるレアドロップであり、エメラルド2個に対して7個の要求はかなり重い。
+-- しかし用途が狭いため、紅天石の分解を多用していると有り余る素材ではある。
+
+** 全文 [#a8b21a2c]
+
+> シャルパの夜 〜夜空を彩るレジンの星〜
+
+> ☆＊*・*＊☆＊*・*＊☆＊*・*＊☆
+> ｜ 　　　シャルパの夜　　　 ｜
+> ｜ 　夜空を彩るレジンの星　 ｜
+> ☆＊*・*＊☆＊*・*＊☆＊*・*＊☆
+> 　
+> 0月0日は #シャルパ独立記念日 ♪
+> 　
+> 普段お世話になっている 〜あの人〜 のために
+> レジンを投げ合ってお祝いしませんか？
+> 　
+> ☆彡 プラスチックの硬さは愛の硬さ ☆彡
+
+> シャルパ形而学会
+> 紅天市（公式）
+
+----
+
+> XARPA NIGHT - Resin Glow Across the Night Sky
+
+> ~ XARPA NIGHT ~
+> Resin Glow Across the Night Sky
+> 　
+> 0/0 is #XarpaIndependenceDay !
+> 　
+> Know someone you're grateful for?
+> Why not celebrate by tossing some resin for them?
+> 　
+> -- Hard as plastic, hard as love --
+
+> The Superphysical Society of Xarpa
+> City of Xarperia (Official)

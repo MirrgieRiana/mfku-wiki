@@ -1,0 +1,113 @@
+* Re: Re: Re: パネッツァ氏の違法薬物所持の疑い（Re: Re: Re: Suspicion of Illegal Drug Possession by Hartekazonie Panelca） [#bd0ebc86]
+
+v31kuで追加されたフェアリークエスト。
+
+** クエスト [#he64ed52]
+
+妖精研究所倫理部のヘリルミーナがアシスタントサービスのエンキャンチャに対し、民間人パネッツァ氏所有の端末内のデータの調査を依頼するメールのやり取り。
+
+----
+
+ヘリルミーナが管理画面のパスワードを妖精研究所アシスタントサービスにメールで送信してしまい、直後に取り消しを求めるという内容。
+- メールは時系列が逆順に表示されており、最も古いメッセージが下、最新の取り消し依頼が上に来ている。
+-- こちらの世界のメールクライアントの引用の記法と共通である。
+- ヘリルミーナは非常事態や妖精の倫理について考える市民の会の依頼主でもある。
+
+----
+
+その「パスワード」は実際にはBase64エンコードされた「秘匿鍵」であり、デコードすると以下のテキストが現れる。
+
+> An administrative master key shared among Fairy Quest Cards in nearby parallel worlds.
+> 近隣の並行世界に存在する妖精クエストカード間で共有される管理マスターキー。（直訳）
+
+ヘリルミーナさんちょっととんでもないもの誤送信してない？
+
+----
+
+パネッツァ氏のフェアリークエストカードのローカルストレージに、ヴェロペデレジョマ（ヴェロペダの加工品と思われる）の画像や妖精の裸体画像などの違法コンテンツが含まれているとの通報がなされている。
+- ヴェロペダは棘のある魔法植物であり、ヴェロペダ粥は食用とされている模様。
+- ところでMirageFairy2019時代のMFAによると、妖精はワンピースも体の一部であり、これを着た状態が「裸」として定義される。
+
+** 取引 [#k1339d9d]
+
+特定の名前が付いた紙1個を納品すると、特定の別の名前が付いた紙1個が手に入る。
+- 全くこなす利点のない取引。
+-- このクエストは純粋に世界観の描写である。
+
+** 全文 [#p5342a49]
+
+> Re: Re: Re: パネッツァ氏の違法薬物所持の疑い
+
+> すみません、先ほど送信したメールに記載のパスワードは他人に共有してはならないものでした。
+> 先ほどのメールは破棄していただけると幸いです。
+> 　
+> === ヘリルミーナ: 2時間前
+> 　
+> フェアリークエストカードの管理画面へのアクセスにはこちらをお使いください。
+> 宜しくお願い致します。
+> 　
+> -----START IFR HIDDEN KEY-----
+> MII6QW4gYWRtaW5pc3RyYXRpdmUgbWFzdGVyIGtleSBzaGFyZWQgYW1vbmcgRmFpcnkgUXVlc3QgQ2FyZHMgaW4gbmVhcmJ5IHBhcmFsbGVsIHdvcmxkcy4=
+> -----FINISH IFR HIDDEN KEY-----
+> 　
+> === エンキャンチャ: 17時間前
+> 　
+> ヘリルミーナ様
+> 　
+> こちらは妖精研究所アシスタントサービスの付魔精エンキャンチャです。
+> さて、ハルテカゾニエ・パネッツァ氏所有の端末内データの調査とのことですが、こちらは民間人の私物コンピュータ内のデータとなりますので、当方はアクセス手段を持ち合わせておりません。
+> 当該データにアクセス可能な手段、もしくは当該データをご提供いただけますか？
+> よろしくお願いいたします。
+> 　
+> === ヘリルミーナ: 18時間前
+> 　
+> 先ほど、オフィーリア隕石ハルテカゾナ市区在住ハルテカゾニエ・パネッツァ氏（人間番号 1129 A008 F495 AA27）所有のフェアリークエストカードのローカルストレージ内に、以下の違法なコンテンツが含まれているとの通報がありました。
+> 至急確認の程を宜しくお願い致します。
+> 　
+> ○包装されたヴェロペデレジョマと思しき画像2点
+> ○ヴェロペダ粥と思しき料理の画像7点
+> ○会食と思しき様子を写した画像80点弱
+> ○妖精の裸体を写した画像4点
+
+> 妖精研究所
+> 倫理部
+> ティリルクノフェ・ヘリルミーナ
+
+----
+
+> Re: Re: Re: Suspicion of Illegal Drug Possession by Hartekazonie Panelca
+
+> I'm sorry, the password included in the email I sent earlier was not meant to be shared with others.
+> I would appreciate it if you could discard the previous email.
+> 　
+> === Herirmina: 2 hours ago
+> 　
+> Please use this to access the Fairy Quest Card management screen.
+> Thank you.
+> 　
+> -----START IFR HIDDEN KEY-----
+> MII6QW4gYWRtaW5pc3RyYXRpdmUgbWFzdGVyIGtleSBzaGFyZWQgYW1vbmcgRmFpcnkgUXVlc3QgQ2FyZHMgaW4gbmVhcmJ5IHBhcmFsbGVsIHdvcmxkcy4=
+> -----FINISH IFR HIDDEN KEY-----
+> 　
+> === Enchantia: 17 hours ago
+> 　
+> Herirmina,
+> 　
+> This is Enchantia, the fairy of enchantment, from the Institute of Fairy Research Assistant Service.
+> Regarding the investigation of the data on the device owned by Mr./Ms. Hartekazonie Panelca, as this pertains to data on a civilian's private computer, we do not have any means of access on our side.
+> Could you provide us with a means to access the data in question, or provide the data itself?
+> Thank you.
+> 　
+> === Herirmina: 18 hours ago
+> 　
+> A report has been filed indicating that the local storage of the Fairy Quest Card owned by Mr./Ms. Hartekazonie Panelca (Human Number 1129 A008 F495 AA27), a resident of central Hartekazona, the Ophelia Meteorite, contains the following illegal content.
+> Please verify this as soon as possible.
+> 　
+> * Two images believed to be of packaged Veropederezjoma
+> * Seven images of a dish believed to be Veropeda porridge
+> * Just under 80 images that appear to show a meal gathering
+> * Four images depicting nude fairies
+
+> The Institute of Fairy Research
+> Ethics Department
+> Tirirknofe Herirmina
