@@ -11,7 +11,7 @@ buildscript {
     }
 }
 
-val srcZipFileName = "dd9cf6de-0f98-41c1-8484-97543e02f28b.tar.gz"
+val srcZipFileName = "4de8ce43-2a3e-45b6-ac77-26099f370eff.tar.gz"
 
 // Wiki Dump を展開
 val unpackWikiDump = tasks.register<Sync>("unpackWikiDump") {
