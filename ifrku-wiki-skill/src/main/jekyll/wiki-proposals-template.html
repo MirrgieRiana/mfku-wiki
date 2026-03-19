@@ -1,0 +1,450 @@
+<!--
+  Wiki編集提案ビューワー
+
+  このHTMLファイルは、Wiki編集提案をdiff形式で表示する汎用テンプレートです。
+  プロジェクト固有の情報はすべて <script id="cards-data" type="application/json"> 内の
+  JSONデータとして定義されており、それ以外の部分（CSS・JS・HTMLテンプレート）は
+  どのプロジェクトでもそのまま使い回せます。
+
+  ■ JSONデータの構造
+
+    {
+      "title":       ページ全体の見出し（<h1> および <title> に使用）,
+      "description": ページ全体の説明文,
+      "editUrlBase": Wiki編集ページのURLプレフィックス（ページ名をencodeURIComponentで連結）,
+      "cards":       編集提案カードの配列（下記参照）
+    }
+
+  ■ カードの構造
+
+    {
+      "title":       カードの見出し,
+      "description": カードの説明文,
+      "open":        初期状態で開いているか（true / false。省略時は true 扱い）,
+      "color":       見出し背景色（CSS色値。省略時はデフォルトの #f6f8fa）,
+      "page":        対象Wikiページ名（編集リンクに使用。不要な場合は null）,
+      "lines":       diff行の配列（diffがないカードは null）
+    }
+
+  ■ diff行の構造
+
+    { "type": "a", "text": "追加行のテキスト" }   … 緑背景で表示、マーカー +
+    { "type": "d", "text": "削除行のテキスト" }   … 赤背景で表示、マーカー -
+    { "type": "c", "text": "変更なし行のテキスト" } … 白背景で表示、マーカー（空白）
+
+    空行は { "type": "a", "text": "" } のように text を空文字列にします。
+
+  ■ 機能
+
+    - 各カードは <details> で開閉可能です。open プロパティで初期状態を制御します。
+    - 「Copy」ボタンは削除行を除いたWiki構文をクリップボードにコピーします。
+    - 「編集ページを開く」リンクは editUrlBase + encodeURIComponent(page) を開きます。
+    - diff本文はブラウザの範囲選択でコピーでき、空行も保持されます。
+    - 長い行は横スクロールで閲覧できます。
+-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>編集提案</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 20px;
+      background: #f6f8fa;
+      color: #1f2328;
+      line-height: 1.6;
+    }
+
+    /* Header */
+
+    h1 {
+      font-size: 1.75em;
+      font-weight: 700;
+      margin: 0 0 4px;
+    }
+
+    .description {
+      color: #474d54;
+      margin: 0 0 24px;
+    }
+
+    /* Card */
+
+    details {
+      background: #fff;
+      border: 1px solid #d1d9e0;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(31, 35, 40, 0.04);
+      transition: box-shadow 0.15s;
+    }
+
+    details:hover {
+      box-shadow: 0 2px 8px rgba(31, 35, 40, 0.08);
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 14px 20px;
+      font-weight: 600;
+      font-size: 1em;
+      color: #1f2328;
+      background: #f6f8fa;
+      border-radius: 8px;
+      list-style: none;
+      transition: background 0.15s;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::before {
+      content: "\25b6";
+      display: inline-block;
+      margin-right: 8px;
+      font-size: 0.7em;
+      color: #474d54;
+      transition: transform 0.15s;
+    }
+
+    details[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    summary:hover {
+      background: #eaeef2;
+    }
+
+    details[open] summary {
+      border-bottom: 1px solid #d1d9e0;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-body > p {
+      margin: 0 0 12px;
+      color: #474d54;
+      font-size: 0.9em;
+    }
+
+    /* Diff */
+
+    .diff {
+      border: 1px solid #d1d9e0;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 0 0 16px;
+    }
+
+    .diff table {
+      min-width: 100%;
+      width: max-content;
+      border-collapse: collapse;
+    }
+
+    .diff td {
+      vertical-align: top;
+      padding: 0;
+    }
+
+    .diff .mc {
+      width: 32px;
+      border-right: 1px solid #d1d9e0;
+      background: #f6f8fa;
+    }
+
+    .diff .mc div,
+    .diff .cc div {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 12px;
+      line-height: 22px;
+      min-height: 22px;
+    }
+
+    .diff .mc div {
+      text-align: center;
+      padding: 0 6px;
+      user-select: none;
+      color: #57606a;
+    }
+
+    .diff .cc div {
+      padding: 0 12px;
+      white-space: pre;
+      height: 22px;
+      overflow: hidden;
+    }
+
+    .diff .add {
+      background: #dafbe1;
+    }
+
+    .diff .mc .add {
+      background: #aceebb;
+    }
+
+    .diff .del {
+      background: #ffebe9;
+    }
+
+    .diff .mc .del {
+      background: #ffd7d5;
+    }
+
+    /* Actions */
+
+    .actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .actions button,
+    .actions a {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .actions button {
+      background: #1f883d;
+      color: #fff;
+      border: none;
+    }
+
+    .actions button:hover {
+      background: #1a7f37;
+    }
+
+    .actions a {
+      text-decoration: none;
+      background: #fff;
+      color: #1f2328;
+      border: 1px solid #d1d9e0;
+    }
+
+    .actions a:hover {
+      background: #f6f8fa;
+      border-color: #b1bac4;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script id="cards-data" type="application/json">
+    {
+      "title": "v3.0 編集提案",
+      "description": "CHANGELOG v3.0 の各項目とWiki現物を逐一照合した結果、未反映の項目です。（確認日: 2025-01-15）",
+      "editUrlBase": "https://wiki.example.com/patisserie/::cmd/edit?page=",
+      "cards": [
+        {
+          "title": "マドレーヌ（新規ページ）",
+          "description": "v3.0で追加されたTier2の焼き菓子。Wikiにページが存在しない。",
+          "open": true,
+          "page": "マドレーヌ",
+          "lines": [
+            { "type": "a", "text": "* マドレーヌ（Madeleine）" },
+            { "type": "a", "text": "" },
+            { "type": "a", "text": "> 貝殻の形に焼かれた、記憶の味。" },
+            { "type": "a", "text": "" },
+            { "type": "a", "text": "> A shell-shaped memory of sweetness." },
+            { "type": "a", "text": "> 貝殻の形をした甘さの記憶。" },
+            { "type": "a", "text": "" },
+            { "type": "a", "text": "v3.0で追加されたTier2の焼き菓子。" },
+            { "type": "a", "text": "" },
+            { "type": "a", "text": "** 入手" },
+            { "type": "a", "text": "" },
+            { "type": "a", "text": "バター4個と小麦粉から作業台でクラフトできる。" },
+            { "type": "a", "text": "" },
+            { "type": "a", "text": "** 用途" },
+            { "type": "a", "text": "" },
+            { "type": "a", "text": "食べると満腹度を3回復する。" },
+            { "type": "a", "text": "- 隠し満腹度の回復量が高く、コストパフォーマンスに優れる。" },
+            { "type": "a", "text": "" },
+            { "type": "a", "text": "** 余談" },
+            { "type": "a", "text": "" },
+            { "type": "a", "text": "名前の由来はフランス語の「小さな貝殻」から。" }
+          ]
+        },
+        {
+          "title": "クロワッサン（既存ページ追記：レシピ変更）",
+          "description": "v3.0でレシピがバター2個からバター4個に変更されたが、入手セクションに未反映。",
+          "open": true,
+          "page": "クロワッサン",
+          "lines": [
+            { "type": "c", "text": "** 入手" },
+            { "type": "c", "text": "" },
+            { "type": "d", "text": "バター2個とパイ生地から作業台でクラフトできる。" },
+            { "type": "a", "text": "バター4個とパイ生地から作業台でクラフトできる。" },
+            { "type": "c", "text": "- 最序盤に手に入れるにはやや重め。" }
+          ]
+        },
+        {
+          "title": "エクレア（既存ページ追記：バージョン変遷）",
+          "description": "v3.0でトッピングにチョコレートが必須になったが、余談に未記載。",
+          "open": true,
+          "page": "エクレア",
+          "lines": [
+            { "type": "c", "text": "旧版のレシピでは180℃だったが、現行版では200℃に変更された。" },
+            { "type": "a", "text": "" },
+            { "type": "a", "text": "----" },
+            { "type": "a", "text": "" },
+            { "type": "a", "text": "v3.0でトッピングにチョコレートが必須になった。" },
+            { "type": "a", "text": "- それ以前はバニラクリームのみでも完成品が得られた。" }
+          ]
+        },
+        {
+          "title": "カラメルソースの温度帯（要調査）",
+          "description": "CHANGELOG「変更: カラメルソースの加熱温度を調整。」が未反映の可能性。具体的な数値がCHANGELOGに記載されていないため、ソースコードの確認が必要。",
+          "open": false,
+          "color": "#fff3cd",
+          "page": null,
+          "lines": null
+        }
+      ]
+    }
+  </script>
+
+  <script>
+    "use strict";
+
+    const LINE_TYPES = {
+      a: { cls: "add", marker: "+" },
+      d: { cls: "del", marker: "-" },
+      c: { cls: "ctx", marker: " " },
+    };
+
+    function createDiffTable(lines) {
+      const table = document.createElement("table");
+      const tr = document.createElement("tr");
+      const mc = document.createElement("td");
+      const cc = document.createElement("td");
+      mc.className = "mc";
+      cc.className = "cc";
+
+      for (const { type, text } of lines) {
+        const { cls, marker } = LINE_TYPES[type];
+
+        const md = document.createElement("div");
+        md.className = cls;
+        md.textContent = marker;
+        mc.appendChild(md);
+
+        const cd = document.createElement("div");
+        cd.className = cls;
+        cd.textContent = text + "\n";
+        cc.appendChild(cd);
+      }
+
+      tr.append(mc, cc);
+      table.appendChild(tr);
+      return table;
+    }
+
+    function extractWikiText(lines) {
+      return lines
+        .filter(l => l.type !== "d")
+        .map(l => l.text)
+        .join("\n");
+    }
+
+    function createCopyButton(wikiText) {
+      const btn = document.createElement("button");
+      btn.textContent = "Copy";
+      btn.addEventListener("click", () => {
+        navigator.clipboard.writeText(wikiText);
+        btn.textContent = "Copied!";
+        setTimeout(() => { btn.textContent = "Copy"; }, 1500);
+      });
+      return btn;
+    }
+
+    function createEditLink(editUrlBase, page) {
+      const link = document.createElement("a");
+      link.href = editUrlBase + encodeURIComponent(page);
+      link.textContent = "編集ページを開く";
+      return link;
+    }
+
+    function renderCard(editUrlBase, card) {
+      const details = document.createElement("details");
+      details.open = card.open !== false;
+
+      const summary = document.createElement("summary");
+      summary.textContent = card.title;
+      if (card.color) {
+        summary.style.background = card.color;
+      }
+      details.appendChild(summary);
+
+      const body = document.createElement("div");
+      body.className = "card-body";
+
+      const desc = document.createElement("p");
+      desc.textContent = card.description;
+      body.appendChild(desc);
+
+      if (card.lines) {
+        const diff = document.createElement("div");
+        diff.className = "diff";
+        diff.appendChild(createDiffTable(card.lines));
+        body.appendChild(diff);
+
+        const wikiText = extractWikiText(card.lines);
+        const actions = document.createElement("div");
+        actions.className = "actions";
+        actions.appendChild(createCopyButton(wikiText));
+        if (card.page) {
+          actions.appendChild(createEditLink(editUrlBase, card.page));
+        }
+        body.appendChild(actions);
+      }
+
+      details.appendChild(body);
+      return details;
+    }
+
+    function main() {
+      const data = JSON.parse(document.getElementById("cards-data").textContent);
+      const root = document.getElementById("root");
+
+      document.title = data.title;
+
+      const h1 = document.createElement("h1");
+      h1.textContent = data.title;
+      root.appendChild(h1);
+
+      const desc = document.createElement("p");
+      desc.className = "description";
+      desc.textContent = data.description;
+      root.appendChild(desc);
+
+      for (const card of data.cards) {
+        root.appendChild(renderCard(data.editUrlBase, card));
+      }
+    }
+
+    main();
+  </script>
+</body>
+</html>
