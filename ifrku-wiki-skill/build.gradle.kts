@@ -3,6 +3,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
 version = file("version.txt").readText().trim()
 
 val jekyllSource = layout.projectDirectory.dir("src/main/jekyll")
+val resources = layout.projectDirectory.dir("src/main/resources")
 
 val bundleInstall by tasks.registering(Exec::class) {
     inputs.file("Gemfile")
@@ -26,6 +27,7 @@ val jekyllBuild by tasks.registering(Exec::class) {
 
 val copyHtml by tasks.registering(Sync::class) {
     from(jekyllBuild)
+    from(resources)
     into(layout.buildDirectory.dir("skill-html"))
 }
 
@@ -57,6 +59,7 @@ val generateSkillMd by tasks.registering {
 
 val skillZip by tasks.registering(Zip::class) {
     from(generateSkillMd)
+    from(resources)
     destinationDirectory = layout.buildDirectory.dir("distributions")
     archiveBaseName = "ifrku-wiki-skill"
     archiveVersion = version.toString()
