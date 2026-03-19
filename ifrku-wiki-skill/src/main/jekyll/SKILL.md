@@ -14,11 +14,11 @@ lang: ja
    - 本ファイル。スキルの概要と各ファイルの説明です。
 - [ifrku-wiki-skill.md](ifrku-wiki-skill.md) / [ifrku-wiki-skill.html](ifrku-wiki-skill.html)
    - 記述規約の本体です。Wiki記事の編集やレビューの際に参照してください。
-- [KNOWHOW.md](KNOWHOW.md)
+- [KNOWHOW.md](KNOWHOW.md) / [KNOWHOW.html](KNOWHOW.html)
    - プロジェクトの概要や資料、教訓などのノウハウが記載されています。
 - [wiki-proposals-template.html](wiki-proposals-template.html)
    - Wiki編集提案ビューワーのテンプレートです。編集提案をdiff形式で表示します。
    - プロジェクト固有の情報はファイル内のJSONデータとして定義されており、テンプレート部分はそのまま使い回せます。
    - 使い方はファイル冒頭のコメントを参照してください。
 
-md はテキスト形式、html はブラウザ閲覧用です。内容は同一です。
+SKILL.md、ifrku-wiki-skill.md、KNOWHOW.md は md（テキスト形式）と html（ブラウザ閲覧用）の2形式があり、内容は同一です。
