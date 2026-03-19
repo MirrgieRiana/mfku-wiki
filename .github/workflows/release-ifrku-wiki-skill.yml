@@ -26,7 +26,7 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v4
 
-      - run: cd ifrku-wiki-skill && ./gradlew build
+      - run: ./gradlew :ifrku-wiki-skill:build
 
       - uses: softprops/action-gh-release@v2
         with:
