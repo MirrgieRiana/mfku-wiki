@@ -18,5 +18,5 @@ IFRKU非公式Wikiの記事のダンプです。
 
 1. [WikiWikiの管理ページ](https://c.wikiwiki.jp/wiki/mifai2024/advanced/dump)からダンプファイルをダウンロードする。
    - `エンコードされているページ名をディレクトリ階層つきのファイルにデコード` はオフでよい。
-2. [/dumps](/dumps) に `*.tar.gz` ファイルを配置する。
+2. [dumps](dumps) に `*.tar.gz` ファイルを配置する。
 3. `./gradlew dump` を実行する.
