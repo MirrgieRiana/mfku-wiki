@@ -28,6 +28,7 @@ jobs:
           cp README.md _pages/
 
           mkdir -p _pages/wiki-dump
+          cp wiki-dump/README.md _pages/wiki-dump/
           cp wiki-dump/all.wiki.json _pages/wiki-dump/
           cp wiki-dump/all.wiki.txt _pages/wiki-dump/
 
