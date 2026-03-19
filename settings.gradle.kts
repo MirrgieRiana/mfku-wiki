@@ -3,3 +3,5 @@ pluginManagement {
 }
 
 rootProject.name = "mfku-wiki"
+
+include("wiki-dump")
