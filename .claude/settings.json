@@ -5,7 +5,9 @@
       "Bash(scripts/wikiwiki-get-page.sh *)",
       "Bash(scripts/wikiwiki-list-pages.sh)",
       "Edit(**/ai/**/*.html)",
-      "Write(**/ai/**/*.html)"
+      "Write(**/ai/**/*.html)",
+      "Edit(MEMORY.md)",
+      "Write(MEMORY.md)"
     ]
   }
 }

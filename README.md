@@ -4,11 +4,18 @@
 
 これはIFRKU非公式Wikiに関するツールをまとめたリポジトリです。
 
-## リンク
+### リンク
 
 - [IFRKU非公式Wiki Wiki*](https://wikiwiki.jp/mifai2024/)
 - [本リポジトリのGitHubリポジトリ](https://github.com/MirrgieRiana/mfku-wiki)
 - [本リポジトリの公開ページ](https://mirrgieriana.github.io/mfku-wiki/)
+
+### プロジェクトメモリ
+
+Claude Code用のプロジェクトメモリです。
+Claudeが管理しており、新しい知識を得次第自由に編集することができます。
+
+[MEMORY.md](MEMORY.md) を参照してください。
 
 ## Wikiダンプ
 
