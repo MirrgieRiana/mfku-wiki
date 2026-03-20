@@ -14,6 +14,7 @@ lang: ja
    - 本ファイル。スキルの概要と各ファイルの説明です。
 - [ifrku-wiki-skill.md](ifrku-wiki-skill.md) / [ifrku-wiki-skill.html](ifrku-wiki-skill.html)
    - 記述規約の本体です。Wiki記事の編集やレビューの際に参照してください。
+   - 編集提案の際には必ず読まなければならない規範があります。
 - [KNOWHOW.md](KNOWHOW.md) / [KNOWHOW.html](KNOWHOW.html)
    - プロジェクトの概要や資料、教訓などのノウハウが記載されています。
 - [wiki-proposals-template.html](wiki-proposals-template.html)
