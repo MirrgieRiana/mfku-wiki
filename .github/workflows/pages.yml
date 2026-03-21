@@ -23,14 +23,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Prepare pages content
-        run: |
-          mkdir -p _pages
-          cp README.md _pages/
-
-          mkdir -p _pages/wiki-dump
-          cp wiki-dump/README.md _pages/wiki-dump/
-          cp wiki-dump/all.wiki.json _pages/wiki-dump/
-          cp wiki-dump/all.wiki.txt _pages/wiki-dump/
+        run: rsync -a --exclude='.git' --exclude='wiki-dump/dumps' . _pages/
 
       - uses: actions/jekyll-build-pages@v1
         with:
